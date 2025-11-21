@@ -114,7 +114,7 @@ function CardProjectModern({ index, project }: CardProjectModernProps) {
         border="1px solid"
         borderColor="whiteAlpha.100"
         boxShadow="0 18px 50px rgba(8, 8, 16, 0.55)"
-        transition="all 0.3s ease"
+        sx={{ transition: "all 0.3s ease" }}
         role="group"
         _hover={{
           borderColor: "accent.500",

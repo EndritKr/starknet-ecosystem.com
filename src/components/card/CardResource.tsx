@@ -78,7 +78,7 @@ function CardResource({
         p={4}
         border="1px solid"
         borderColor="primary.700"
-        transition="all 0.3s ease"
+        sx={{ transition: "all 0.3s ease" }}
         _hover={{
           borderColor: "accent.500",
           boxShadow: "0 8px 24px rgba(14, 165, 233, 0.15)",

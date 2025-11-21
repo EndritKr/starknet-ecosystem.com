@@ -124,7 +124,7 @@ const JobListRaw: FC<Props> = ({ id, project, job, last, observe }) => {
         w="full"
         minH="100px"
         cursor="pointer"
-        transition="all 0.3s ease"
+        sx={{ transition: "all 0.3s ease" }}
         bg="primary.800"
         borderRadius="xl"
         border="1px solid"
