@@ -1,6 +1,7 @@
 import { Box, Flex, SimpleGrid, Text } from "@chakra-ui/layout";
-import { Image, Show } from "@chakra-ui/react";
+import { Show } from "@chakra-ui/react";
 import { faSort } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
 import type { ChangeEvent } from "react";
 import { useEffect, useState } from "react";
 import { useInView } from "react-cool-inview";
@@ -8,12 +9,14 @@ import { useInView } from "react-cool-inview";
 import type { Project, ProjectItf } from "../../data/ecosystem";
 import type { Tag } from "../../data/tag";
 import { allEcosystemTags } from "../../data/tag";
-import CardProject from "../components/card/CardProject";
+import CardProjectModern from "../components/card/CardProjectModern";
 import CardProjectSkeleton from "../components/card/CardProjectSkeleton";
-import HighlightedText from "../components/layout/HighlightedText";
-import Input from "../components/layout/Input";
+import SearchBar from "../components/layout/SearchBar";
 import Menu from "../components/layout/Menu";
 import SwitchTag from "../components/layout/SwitchTag";
+import CategoryFilter from "../components/layout/CategoryFilter";
+//import HomeMetrics from "../components/metrics/HomeMetrics";
+import EcosystemMetrics from "../components/metrics/ecosystem-metrics";
 import { useTranslate } from "../context/TranslateProvider";
 import { EcosystemApi } from "../services/ecosystem-api.service";
 import {
@@ -22,9 +25,12 @@ import {
   sortBy,
 } from "../services/project.service";
 
+const MotionBox = motion(Box);
+const MotionFlex = motion(Flex);
+
 const Home = () => {
   const { t } = useTranslate();
-  const LOADED_STEPS = 10;
+  const LOADED_STEPS = 12;
   const sortTags: Tag[] = [
     { key: ProjectSorting.A_Z, value: "A - Z", icon: "", label: "A - Z" },
     {
@@ -84,9 +90,7 @@ const Home = () => {
   }, [filter, filterMainnet, sorter, keyword, lastIndexLoaded, allProjects]);
 
   const { observe } = useInView({
-    // When the last item comes to the viewport
     onEnter: ({ unobserve }) => {
-      // Pause observe when loading data
       unobserve();
       setLastIndexLoaded(lastIndexLoaded + LOADED_STEPS);
     },
@@ -96,7 +100,7 @@ const Home = () => {
     setKeyword(event.target.value);
 
   const renderLoadingState = () => {
-    return Array(20)
+    return Array(12)
       .fill(0)
       .map((_, index) => (
         // eslint-disable-next-line react/no-array-index-key
@@ -129,78 +133,160 @@ const Home = () => {
           key={`project-${project.name}`}
           flex={1}
         >
-          <CardProject index={index} project={project} />
+          <CardProjectModern index={index} project={project} />
         </Box>
       );
     });
   };
+
   return (
     <Flex
       w="full"
       direction="column"
       justify="flex-start"
-      align="flex-start"
+      align="center"
       transform="translateZ(0)"
+      position="relative"
+      zIndex={1}
+      py={12}
+      px={{ base: 4, md: 6 }}
+      bgGradient="linear(to-b, rgba(6, 4, 3, 0.95), rgba(28, 12, 6, 0.92))"
     >
-      <Flex
-        direction="row"
-        w="full"
-        justify="space-between"
-        position="relative"
-      >
-        {/* Big intro text */}
-        <HighlightedText
-          text={t.common.title_main_dapps || "dApps, Services & Wallets"}
-          highlighted={t.common.hundreds || "Hundreds"}
-        />
-        <Box
-          boxSize="400px"
-          position="absolute"
-          right="0"
-          top="-100px"
-          zIndex={0}
+        {/* Hero Section - Full Width */}
+        <Flex
+          w="full"
+          direction="column"
+          align="center"
+          justify="center"
+          mb={16}
+          px={4}
         >
-          <Image src="/astro_3.png" alt="Starknet Astro" />
-        </Box>
-      </Flex>
-      {/* Sub intro text */}
-      <Text
-        zIndex={1}
-        mt={8}
-        textAlign="start"
-        color="whiteAlpha.600"
-        fontSize="20px"
-        maxWidth="600px"
-      >
-        {t.common.subtitle_main ||
-          "Immerse yourself in the StarkNet Ecosystem by discovering projects, jobs, metrics and learning resources. "}
-      </Text>
+          {/* Title */}
+          <MotionBox
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            w="full"
+            maxW="1000px"
+            textAlign="center"
+            mb={6}
+          >
+            <Text
+              fontSize={{ base: "4xl", md: "5xl", lg: "6xl" }}
+              fontWeight="extrabold"
+              lineHeight="1.05"
+              letterSpacing="-0.01em"
+              bgGradient="linear(to-r, whiteAlpha.900, accent.400)"
+              bgClip="text"
+            >
+              Discover, Build & Connect on Starknet
+            </Text>
+          </MotionBox>
 
-      {/* Main part */}
-      <Flex w="full" h="full" direction={{ base: "column", md: "row" }} mt={24}>
-        <Flex>
-          <Flex flex={1}>
-            <Menu
-              typeText="Projects"
+          {/* Subtitle */}
+          <MotionBox
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.15, duration: 0.6 }}
+            w="full"
+            maxW="800px"
+            textAlign="center"
+            mb={10}
+          >
+            <Text
+              fontSize={{ base: "lg", md: "xl" }}
+              color="whiteAlpha.700"
+              lineHeight="1.8"
+              maxW="720px"
+              mx="auto"
+            >
+              Explore the projects, wallets, and tools driving on-chain innovation. Your gateway to the Starknet ecosystem.
+            </Text>
+          </MotionBox>
+
+          {/* Ecosystem Metrics */}
+          <MotionBox
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.25, duration: 0.6, ease: "easeOut" }}
+            w="full"
+            maxW="1200px"
+            px={{ base: 0, md: 4 }}
+          >
+            <Box
+              w="full"
+              border="1px solid"
+              borderColor="whiteAlpha.100"
+              borderRadius="3xl"
+              boxShadow="0 30px 80px rgba(12, 10, 28, 0.55)"
+              backdropFilter="blur(20px)"
+              px={{ base: 6, md: 10 }}
+              py={{ base: 6, md: 10 }}
+              bgGradient="linear(to-br, rgba(249, 107, 44, 0.22), rgba(8, 4, 2, 0.92))"
+            >
+              <Flex
+                direction={{ base: "column", md: "row" }}
+                justify="space-between"
+                align={{ base: "flex-start", md: "center" }}
+                mb={{ base: 6, md: 8 }}
+                gap={3}
+              >
+                <Box>
+                  <Text
+                    fontSize={{ base: "xl", md: "2xl" }}
+                    fontWeight="semibold"
+                    letterSpacing="0.02em"
+                    textTransform="uppercase"
+                    color="whiteAlpha.800"
+                  >
+                    {t.common.hero_metrics_title || "Live metrics"}
+                  </Text>
+                  <Text color="whiteAlpha.600" mt={1} maxW="3xl">
+                    {t.common.hero_metrics_description ||
+                      "Keep up with the latest transactions, contracts, and blocks securing the Starknet ecosystem."}
+                  </Text>
+                </Box>
+              </Flex>
+              <EcosystemMetrics />
+            </Box>
+          </MotionBox>
+        </Flex>
+
+
+        {/* Category Filter - Horizontal and Modern */}
+        <Box w="full" maxW="1400px" px={4} mb={8}>
+          <MotionBox
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.5 }}
+            w="full"
+          >
+            <CategoryFilter
               tags={allEcosystemTags}
-              initialValue={tagAll}
-              childCount={filteredProjectsCount}
-              onChange={(newValue) => {
-                setFilter(newValue);
+              selectedTag={filter}
+              onSelect={(newTag) => {
+                setFilter(newTag);
                 setFilteredProjectsCount(-1);
               }}
+              projectCount={filteredProjectsCount}
             />
-          </Flex>
-          <Show below="md">
-            <Box ml={2}>{renderSortMenu()}</Box>
-          </Show>
-        </Flex>
-        <Flex direction="column" w="full" align="flex-end">
-          <Flex w="full" mt={2} mb={8} justify="space-between" align="center">
+          </MotionBox>
+        </Box>
+
+        {/* Controls Bar */}
+        <Box w="full" maxW="1400px" px={4} mb={8}>
+          <Flex
+            w="full"
+            direction={{ base: "column", md: "row" }}
+            justify="space-between"
+            align={{ base: "stretch", md: "center" }}
+            gap={4}
+          >
+            {/* Filter Toggles */}
             <Flex
-              direction={{ base: "column", lg: "row" }}
+              direction={{ base: "column", sm: "row" }}
+              gap={3}
               align="flex-start"
-              mr={2}
             >
               <SwitchTag
                 checkedText="Show all"
@@ -209,50 +295,69 @@ const Home = () => {
                 isChecked={!filterMainnet}
               />
               <SwitchTag
-                ml={{ base: 0, lg: 2 }}
-                mt={{ base: 2, lg: 0 }}
                 checkedText="Only mainnet"
                 placeholderText="Only mainnet"
                 onCheckedChange={() => setFilterMainnet(true)}
                 isChecked={filterMainnet}
               />
             </Flex>
-            <Flex>
-              <Show above="md">
-                <Box mr={2}>{renderSortMenu()}</Box>
-              </Show>
-              <Input
-                debounce={200}
-                maxW={{ base: "inherit", md: "250px" }}
-                onChange={handleChangeKeyword}
-                placeholder="Search project"
-              />
+
+            {/* Search and Sort */}
+            <Flex
+              direction={{ base: "column", sm: "row" }}
+              gap={3}
+              align="flex-end"
+              w={{ base: "full", md: "auto" }}
+            >
+              <Box w={{ base: "full", sm: "auto" }}>
+                <SearchBar
+                  value={keyword}
+                  onChange={handleChangeKeyword}
+                  placeholder="Search project..."
+                />
+              </Box>
+              <Box w={{ base: "full", sm: "auto" }}>
+                {renderSortMenu()}
+              </Box>
             </Flex>
           </Flex>
-          {loading || (projects && projects.length > 0) ? (
-            <SimpleGrid
-              columns={{ sm: 1, md: 1, lg: 2, xl: 3 }}
-              spacing="20px"
-              w="full"
-            >
-              {loading ? renderLoadingState() : renderData()}
-            </SimpleGrid>
-          ) : (
-            <Flex
-              w="full"
-              direction="column"
-              justify="center"
-              align="center"
-              mt={20}
-            >
-              <Text fontSize="xl">{t.common.no_project}</Text>
-              <Text mt={2} fontSize="lg">
-                {t.common.maybe_yours}
-              </Text>
-            </Flex>
-          )}
-        </Flex>
-      </Flex>
+        </Box>
+
+        {/* Projects Grid */}
+        <Box w="full" maxW="1400px" px={4}>
+          <MotionBox
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4, duration: 0.5 }}
+            w="full"
+          >
+            {loading || (projects && projects.length > 0) ? (
+              <SimpleGrid
+                columns={{ sm: 1, md: 2, lg: 3, xl: 4 }}
+                spacing={{ base: 6, md: 8 }}
+                w="full"
+              >
+                {loading ? renderLoadingState() : renderData()}
+              </SimpleGrid>
+            ) : (
+              <Flex
+                w="full"
+                direction="column"
+                justify="center"
+                align="center"
+                mt={20}
+                py={12}
+              >
+                <Text fontSize="2xl" fontWeight="bold" mb={2}>
+                  {t.common.no_project}
+                </Text>
+                <Text fontSize="lg" color="whiteAlpha.600">
+                  {t.common.maybe_yours}
+                </Text>
+              </Flex>
+            )}
+          </MotionBox>
+        </Box>
     </Flex>
   );
 };

@@ -29,6 +29,9 @@ const zhTWTranslate: TranslateState = {
     academy_subtitle:
       "您的 Starknet 學習商店。查找教程、指南、貢獻、圖書館。訂閱新聞通訊以跟踪這個快速發展的生態系統。",
     jobs_subtitle: "你可能離你夢想的工作只有一鍵之遙",
+    hero_metrics_title: "即時指標",
+    hero_metrics_description:
+      "追蹤最新的交易、合約與區塊，掌握 Starknet 生態系統的安全狀態。",
     cumulative_chart: "累積圖表",
     non_cumulative_chart: "非累積圖表",
   },

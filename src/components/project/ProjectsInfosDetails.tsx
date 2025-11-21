@@ -1,4 +1,4 @@
-import { Flex, Text } from "@chakra-ui/layout";
+import { Box, Flex, Text } from "@chakra-ui/layout";
 import type { FC } from "react";
 
 interface Props {
@@ -7,11 +7,20 @@ interface Props {
 }
 
 const ProjectsInfosDetails: FC<Props> = ({ title, value }) => {
-  // if (!project) return null;
   return (
-    <Flex direction="column" mb="4">
-      <Text mb="1">{title}</Text>
-      {value}
+    <Flex direction="column" mb={title ? 6 : 0}>
+      {title && (
+        <Text
+          mb={3}
+          fontSize="sm"
+          fontWeight="600"
+          color="whiteAlpha.700"
+          letterSpacing="0.05em"
+        >
+          {title}
+        </Text>
+      )}
+      <Box>{value}</Box>
     </Flex>
   );
 };

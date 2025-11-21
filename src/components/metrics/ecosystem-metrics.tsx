@@ -1,14 +1,11 @@
 import { Box, Flex, Link, SimpleGrid, Text } from "@chakra-ui/layout";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { formatUnits } from "ethers";
 import type { FC } from "react";
 import { useEffect, useState } from "react";
 
 import { useTranslate } from "../../context/TranslateProvider";
-import type { BridgeMetrics } from "../../models/bridge-metrics";
 import { MetricsApi } from "../../services/metrics-api.service";
-import { formatCompactNumber } from "../../services/number.service";
 
 import CountPaper from "./count-paper";
 
@@ -35,9 +32,6 @@ const EcosystemMetrics: FC<Props> = ({ isMainnet = true }: Props) => {
   const [testnetBlockCount, setTestnetBlockCount] = useState<
     number | undefined
   >(undefined);
-  const [bridgeMetrics, setBridgeMetrics] = useState<BridgeMetrics>();
-  const [testnetBridgeMetrics, setTestnetBridgeMetrics] =
-    useState<BridgeMetrics>();
 
   useEffect(() => {
     MetricsApi.fetchTransactionCount().then(setMainnetTxCount);
@@ -46,69 +40,46 @@ const EcosystemMetrics: FC<Props> = ({ isMainnet = true }: Props) => {
     MetricsApi.fetchTransactionCount(true).then(setTestnetTxCount);
     MetricsApi.fetchContractCount(true).then(setTestnetContractCount);
     MetricsApi.fetchBlockCount(true).then(setTestnetBlockCount);
-    MetricsApi.fetchBridgeMetrics().then(setBridgeMetrics);
-    MetricsApi.fetchBridgeMetrics(true).then(setTestnetBridgeMetrics);
   }, []);
 
   return (
     <Box w="full">
-      <SimpleGrid columns={{ base: 1, xl: 2 }} spacing={4} mb={4}>
+      <SimpleGrid
+        columns={{ base: 1, sm: 2, md: 3 }}
+        spacing={4}
+        mb={4}
+      >
         {isMainnet ? (
-          <CountPaper
-            big
-            count={bridgeMetrics && formatUnits(bridgeMetrics.balance)}
-            label="Ether in bridge"
-            subtitle={
-              bridgeMetrics && bridgeMetrics.ethValue
-                ? `Ether value: ${formatCompactNumber(
-                    parseFloat(formatUnits(bridgeMetrics.balance)) *
-                      bridgeMetrics.ethValue,
-                  )} $ ($${bridgeMetrics.ethValue}/ETH)`
-                : undefined
-            }
-          />
+          <>
+            <CountPaper
+              count={mainnetTxCount}
+              label={`${t.metrics.transactions || "transactions"}`}
+            />
+            <CountPaper
+              count={mainnetContractCount}
+              label={`${t.metrics.contracts || "contracts"}`}
+            />
+            <CountPaper
+              count={mainnetBlockCount}
+              label={`${t.metrics.blocks || "blocks"}`}
+            />
+          </>
         ) : (
-          <CountPaper
-            big
-            count={
-              testnetBridgeMetrics && formatUnits(testnetBridgeMetrics.balance)
-            }
-            label="Ether in bridge"
-          />
+          <>
+            <CountPaper
+              count={testnetTxCount}
+              label={`${t.metrics.transactions || "transactions"}`}
+            />
+            <CountPaper
+              count={testnetContractCount}
+              label={`${t.metrics.contracts || "contracts"}`}
+            />
+            <CountPaper
+              count={testnetBlockCount}
+              label={`${t.metrics.blocks || "blocks"}`}
+            />
+          </>
         )}
-        <SimpleGrid columns={{ base: 1, md: 3 }} spacing={4}>
-          {isMainnet ? (
-            <>
-              <CountPaper
-                count={mainnetTxCount}
-                label={`${t.metrics.transactions || "transactions"}`}
-              />
-              <CountPaper
-                count={mainnetContractCount}
-                label={`${t.metrics.contracts || "contracts"}`}
-              />
-              <CountPaper
-                count={mainnetBlockCount}
-                label={`${t.metrics.blocks || "blocks"}`}
-              />
-            </>
-          ) : (
-            <>
-              <CountPaper
-                count={testnetTxCount}
-                label={`${t.metrics.transactions || "transactions"}`}
-              />
-              <CountPaper
-                count={testnetContractCount}
-                label={`${t.metrics.contracts || "contracts"}`}
-              />
-              <CountPaper
-                count={testnetBlockCount}
-                label={`${t.metrics.blocks || "blocks"}`}
-              />
-            </>
-          )}
-        </SimpleGrid>
       </SimpleGrid>
       <Flex color="whiteAlpha.600" fontSize="sm" mt={2}>
         <Text mr={2}>{t.metrics.data_coming_from || "Data coming from"} </Text>

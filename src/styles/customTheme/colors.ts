@@ -4,27 +4,28 @@ import type { DeepPartial, Theme } from "@chakra-ui/react";
 const extendedColors: DeepPartial<
   Record<string, Theme["colors"]["blackAlpha"]>
 > = {
+  // Vibrant, modern tag colors
   flat: {
-    100: "#2ECC71",
-    200: "#3498DB",
-    300: "#9B59B6",
-    400: "#34495E",
-    500: "#F08080",
-    600: "#647687",
-    700: "#1ABC9C",
-    800: "#DDA0DD",
-    900: "#F0E68C",
+    100: "#10B981", // Emerald
+    200: "#3B82F6", // Blue
+    300: "#8B5CF6", // Purple
+    400: "#6366F1", // Indigo
+    500: "#EC4899", // Pink
+    600: "#F59E0B", // Amber
+    700: "#14B8A6", // Teal
+    800: "#EF4444", // Red
+    900: "#F97316", // Orange
   },
   brand: {
-    100: "",
-    200: "",
-    300: "",
-    400: "#fa6f31",
-    500: "",
-    600: "",
-    700: "",
-    800: "",
-    900: "#ff5007",
+    100: "#FEE2E2",
+    200: "#FECACA",
+    300: "#FCA5A5",
+    400: "#F87171",
+    500: "#EF4444", // Modern red
+    600: "#DC2626",
+    700: "#B91C1C",
+    800: "#991B1B",
+    900: "#7F1D1D",
   },
   onlyDust: {
     100: "#4329b8",
@@ -38,11 +39,29 @@ const extendedColors: DeepPartial<
     900: "",
   },
   primary: {
-    200: "#2E5CFF",
-    300: "rgba(0,71,255,0.56)",
-    500: "#7166F4",
-    700: "#22244D",
-    900: "#121232",
+    50: "#2b1b14",
+    100: "#241610",
+    200: "#1e120d",
+    300: "#190f0b",
+    400: "#140c09",
+    500: "#100907",
+    600: "#0c0605",
+    700: "#090403",
+    800: "#060202",
+    900: "#030101",
+  },
+  // Modern accent colors aligned with Starknet BTFi palette
+  accent: {
+    50: "#FFF4EC",
+    100: "#FFE2D0",
+    200: "#FFC3A1",
+    300: "#FFA06F",
+    400: "#FF8247",
+    500: "#F96B2C", // BTFi orange
+    600: "#DD561F",
+    700: "#B74417",
+    800: "#8A300F",
+    900: "#521B07",
   },
   warning: {
     100: "#ffda95",
@@ -51,8 +70,26 @@ const extendedColors: DeepPartial<
     900: "#854D0E",
   },
   error: {
-    100: "#ff826e",
-    900: "#FF4343",
+    100: "#FEE2E2",
+    200: "#FECACA",
+    300: "#FCA5A5",
+    400: "#F87171",
+    500: "#EF4444",
+    600: "#DC2626",
+    700: "#B91C1C",
+    800: "#991B1B",
+    900: "#7F1D1D",
+  },
+  success: {
+    100: "#D1FAE5",
+    200: "#A7F3D0",
+    300: "#6EE7B7",
+    400: "#34D399",
+    500: "#10B981",
+    600: "#059669",
+    700: "#047857",
+    800: "#065F46",
+    900: "#064E3B",
   },
 };
 

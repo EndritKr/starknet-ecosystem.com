@@ -25,12 +25,14 @@ function Link({
     <Box
       fontSize={fontSize}
       fontWeight={fontWeight}
-      color={color}
-      opacity={color || active ? "1" : "0.5"}
-      transition=".4s all ease"
+      color={color || (active ? "white" : "whiteAlpha.700")}
+      opacity={color || active ? "1" : "0.7"}
+      transition="all 0.3s ease"
+      position="relative"
       _hover={{
         textDecoration: "none",
         opacity: hoverOpacity,
+        color: "white",
       }}
     >
       {isExternal ? (

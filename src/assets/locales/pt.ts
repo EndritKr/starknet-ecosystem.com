@@ -28,6 +28,9 @@ const ptTranslate: TranslateState = {
     academy_subtitle:
       "Sua loja de aprendizado Starknet. Encontre tutoriais, guias, contribuições, bibliotecas. Assine boletins informativos para acompanhar esse ecossistema em rápida evolução.",
     jobs_subtitle: "You may be one click away from your dream job.",
+    hero_metrics_title: "Métricas em tempo real",
+    hero_metrics_description:
+      "Acompanhe as transações, contratos e blocos mais recentes que protegem o ecossistema Starknet.",
     cumulative_chart: "Gráfico cumulativo",
     non_cumulative_chart: "Gráfico não cumulativo",
   },

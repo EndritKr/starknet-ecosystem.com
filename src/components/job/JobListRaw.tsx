@@ -8,6 +8,7 @@ import {
   VStack,
 } from "@chakra-ui/layout";
 import { Show, Button, Collapse, Image, Avatar } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import dayjs from "dayjs";
 import { useRouter } from "next/router";
 import type { FC } from "react";
@@ -22,6 +23,9 @@ import StyledTag from "../layout/StyledTag";
 import JobCreatedFrom from "./JobCreatedFrom";
 import JobDetailSections from "./JobDetailSections";
 
+const MotionBox = motion(Box);
+const MotionFlex = motion(Flex);
+
 interface Props {
   id: string;
   project: Project | undefined;
@@ -35,6 +39,7 @@ const JobListRaw: FC<Props> = ({ id, project, job, last, observe }) => {
   const { t } = useTranslate();
   const [opened, setOpened] = useState(false);
   const { query } = useRouter();
+  
   useEffect(() => {
     const { key } = query;
     if (key && typeof key === "string") {
@@ -42,6 +47,7 @@ const JobListRaw: FC<Props> = ({ id, project, job, last, observe }) => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [query]);
+  
   if (!project || !job) return null;
 
   const renderJobDetails = () => {
@@ -68,7 +74,6 @@ const JobListRaw: FC<Props> = ({ id, project, job, last, observe }) => {
         </HStack>
       </Flex>
     ) : (
-      // No jobs to show
       <span>{t.jobs.no_selected || "No job selected"}</span>
     );
   };
@@ -80,12 +85,21 @@ const JobListRaw: FC<Props> = ({ id, project, job, last, observe }) => {
         isExternal
         href={job.applyLink}
         _hover={{ textDecoration: "none" }}
+        onClick={(event) => event.stopPropagation()}
       >
         <Button
           w="full"
           variant="outline"
-          bg="blue"
-          onClick={(event) => event.stopPropagation()}
+          bg="accent.500"
+          color="white"
+          borderColor="accent.500"
+          _hover={{
+            bg: "accent.600",
+            borderColor: "accent.600",
+            transform: "translateY(-2px)",
+            boxShadow: "0 4px 12px rgba(14, 165, 233, 0.3)",
+          }}
+          transition="all 0.3s"
         >
           {label || "Apply"}
         </Button>
@@ -94,143 +108,188 @@ const JobListRaw: FC<Props> = ({ id, project, job, last, observe }) => {
   };
 
   return (
-    <Flex
-      onClick={() => {
-        setOpened(!opened);
-        window.history.pushState({}, "", `/${locale}/jobs/?key=${id}#${id}`);
-      }}
-      id={id}
-      direction="column"
-      w="full"
-      minH="88px"
-      cursor="pointer"
-      transition="background .2s linear"
-      bg="primary.700"
-      borderRadius="md"
-      py={4}
-      px={4}
-      _hover={{
-        backgroundColor: "primary.700",
-        ".apply-btn": {
-          opacity: 1,
-        },
-      }}
-      ref={observe && last ? observe : null}
+    <MotionBox
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4 }}
+      mb={4}
     >
-      <Flex
+      <MotionFlex
+        onClick={() => {
+          setOpened(!opened);
+          window.history.pushState({}, "", `/${locale}/jobs/?key=${id}#${id}`);
+        }}
+        id={id}
+        direction="column"
         w="full"
-        h="full"
-        direction="row"
-        justify="space-between"
-        align="center"
+        minH="100px"
+        cursor="pointer"
+        transition="all 0.3s ease"
+        bg="primary.800"
+        borderRadius="xl"
+        border="1px solid"
+        borderColor={opened ? "accent.500" : "primary.700"}
+        py={5}
+        px={5}
+        _hover={{
+          borderColor: "accent.500",
+          boxShadow: "0 8px 24px rgba(14, 165, 233, 0.1)",
+          transform: "translateY(-2px)",
+        }}
+        ref={observe && last ? observe : null}
+        whileHover={{ y: -2 }}
       >
-        <Flex justify="center" pl={0} pr={5} h="full" w="88px">
-          {project.image ? (
-            <Image
-              w="full"
-              src={`/logos/${project.image}`}
-              alt={`${project.name} logo`}
-            />
-          ) : (
-            <Avatar bg="flat.600" name={project.name.slice(0, 2)} />
-          )}
-        </Flex>
-        <VStack
-          flex={3}
-          direction="column"
-          justify="flex-start"
-          align="flex-start"
-          spacing={1}
-        >
-          <Text
-            fontSize="lg"
-            fontWeight="bold"
-            whiteSpace="normal"
-            overflow="hidden"
-            textOverflow="ellipsis"
-          >
-            {job.title}
-          </Text>
-          <Text fontSize="sm">{project.name}</Text>
-          <VStack
-            fontSize="xs"
-            align="flex-start"
-            spacing={1}
-            color="whiteAlpha.600"
-          >
-            {job.compensation && (
-              <Text>
-                {job.compensation?.currency || "$"}
-                {job.compensation?.from}k - {job.compensation?.currency || "$"}
-                {job.compensation?.to}k
-              </Text>
-            )}
-            <Text>{job.location}</Text>
-          </VStack>
-        </VStack>
-        {/* Tags */}
-        <Show above="xl">
-          <Stack
-            flex={2}
-            my={2}
-            direction="row"
-            spacing={0}
-            wrap="wrap"
-            shouldWrapChildren
-            justify="flex-start"
-          >
-            {job.remote && (
-              <Box mr={1} mb={2}>
-                <StyledTag key="remote" selected value="Remote" size="md" />
-              </Box>
-            )}
-            {job.tags.map((tag) => (
-              <Box mr={1} mb={2} key={tag}>
-                <StyledTag key={tag} value={tag} size="md" />
-              </Box>
-            ))}
-          </Stack>
-        </Show>
-        <Show above="md">
-          <Box
-            flex={1}
-            textAlign="end"
-            opacity={0}
-            className="apply-btn"
-            transition="all .2s linear"
-          >
-            {renderApplyBtn(t.jobs.apply)}
-          </Box>
-        </Show>
-      </Flex>
-      <Collapse in={opened}>
         <Flex
-          direction="column"
-          align="flex-start"
+          w="full"
           h="full"
-          px={{ base: 0, xl: "88px" }}
+          direction="row"
+          justify="space-between"
+          align="center"
+          gap={4}
         >
-          {renderJobDetails()}
-          <Flex
-            border="1px solid"
-            borderColor="whiteAlpha.300"
-            direction="column"
-            w="full"
-            p={4}
-            borderRadius="xl"
-          >
-            {renderApplyBtn(t.jobs.apply_long)}
-            <HStack align="flex-start" mt={4}>
-              <Text>👉</Text>
-              <Text fontSize="sm" color="whiteAlpha.600">
-                Please reference you found the job on starknet-ecosystem.com,
-                this helps us get more companies to post here, thanks!
-              </Text>
-            </HStack>
+          {/* Logo */}
+          <Flex justify="center" align="center" h="full" w="80px" flexShrink={0}>
+            {project.image ? (
+              <Image
+                w="full"
+                maxW="80px"
+                h="80px"
+                objectFit="contain"
+                src={`/logos/${project.image}`}
+                alt={`${project.name} logo`}
+                borderRadius="lg"
+                bg="primary.900"
+                p={2}
+              />
+            ) : (
+              <Avatar
+                size="lg"
+                bg="flat.600"
+                name={project.name.slice(0, 2)}
+              />
+            )}
           </Flex>
+
+          {/* Job Info */}
+          <VStack
+            flex={1}
+            direction="column"
+            justify="flex-start"
+            align="flex-start"
+            spacing={2}
+            minW={0}
+          >
+            <Text
+              fontSize="lg"
+              fontWeight="bold"
+              whiteSpace="normal"
+              overflow="hidden"
+              textOverflow="ellipsis"
+              display="-webkit-box"
+              sx={{ WebkitLineClamp: "2", WebkitBoxOrient: "vertical" }}
+              color="whiteAlpha.900"
+            >
+              {job.title}
+            </Text>
+            <Text fontSize="sm" color="accent.400" fontWeight="medium">
+              {project.name}
+            </Text>
+            <HStack
+              fontSize="xs"
+              spacing={3}
+              color="whiteAlpha.600"
+              flexWrap="wrap"
+            >
+              {job.compensation && (
+                <Text>
+                  {job.compensation?.currency || "$"}
+                  {job.compensation?.from}k - {job.compensation?.currency || "$"}
+                  {job.compensation?.to}k
+                </Text>
+              )}
+              {job.location && (
+                <Text>📍 {job.location}</Text>
+              )}
+            </HStack>
+          </VStack>
+
+          {/* Tags */}
+          <Show above="lg">
+            <Stack
+              flex={2}
+              direction="row"
+              spacing={2}
+              wrap="wrap"
+              shouldWrapChildren
+              justify="flex-end"
+              maxW="300px"
+            >
+              {job.remote && (
+                <Box>
+                  <StyledTag key="remote" selected value="Remote" size="sm" />
+                </Box>
+              )}
+              {job.tags.slice(0, 3).map((tag) => (
+                <Box key={tag}>
+                  <StyledTag key={tag} value={tag} size="sm" />
+                </Box>
+              ))}
+            </Stack>
+          </Show>
+
+          {/* Apply Button (Desktop) */}
+          <Show above="md">
+            <Box
+              flexShrink={0}
+              w="120px"
+              opacity={opened ? 1 : 0}
+              className="apply-btn"
+              transition="all 0.3s linear"
+            >
+              {renderApplyBtn(t.jobs.apply)}
+            </Box>
+          </Show>
         </Flex>
-      </Collapse>
-    </Flex>
+
+        {/* Expanded Details */}
+        <Collapse in={opened} animateOpacity>
+          <MotionFlex
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: opened ? 1 : 0, height: opened ? "auto" : 0 }}
+            transition={{ duration: 0.3 }}
+            direction="column"
+            align="flex-start"
+            h="full"
+            px={{ base: 0, xl: "80px" }}
+            mt={6}
+            pt={6}
+            borderTop="1px solid"
+            borderColor="primary.700"
+          >
+            {renderJobDetails()}
+            <Box
+              border="1px solid"
+              borderColor="primary.700"
+              bg="primary.900"
+              direction="column"
+              w="full"
+              p={6}
+              borderRadius="xl"
+              mt={6}
+            >
+              {renderApplyBtn(t.jobs.apply_long)}
+              <HStack align="flex-start" mt={4} spacing={3}>
+                <Text fontSize="lg">👉</Text>
+                <Text fontSize="sm" color="whiteAlpha.600" lineHeight="1.6">
+                  Please reference you found the job on starknet-ecosystem.com,
+                  this helps us get more companies to post here, thanks!
+                </Text>
+              </HStack>
+            </Box>
+          </MotionFlex>
+        </Collapse>
+      </MotionFlex>
+    </MotionBox>
   );
 };
 

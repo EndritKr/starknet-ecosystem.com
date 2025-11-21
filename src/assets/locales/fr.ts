@@ -29,6 +29,9 @@ const frTranslate: TranslateState = {
     academy_subtitle:
       "Votre boutique d'apprentissage Starknet. Trouvez des tutoriels, des guides, des contributions, des bibliothèques. Abonnez-vous aux newsletters pour suivre cet écosystème en évolution très rapide.",
     jobs_subtitle: "Vous êtes peut-être à un clic de l'emploi de vos rêves.",
+    hero_metrics_title: "Métriques en direct",
+    hero_metrics_description:
+      "Suivez les dernières transactions, contrats et blocs qui sécurisent l'écosystème Starknet.",
     cumulative_chart: "Cumulatif",
     non_cumulative_chart: "Non cumulatif",
   },

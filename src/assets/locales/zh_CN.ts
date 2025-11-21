@@ -29,6 +29,9 @@ const zhCNTranslation: TranslateState = {
     academy_subtitle:
       "您的Starknet学习商店。查找教程、指南、贡献、图书馆。订阅新闻通讯以跟踪这个快速发展的Starknet生态系统",
     jobs_subtitle: "你可能离梦想工作只有一步之遥",
+    hero_metrics_title: "实时指标",
+    hero_metrics_description:
+      "追踪最新的交易、合约和区块，了解 Starknet 生态系统的安全状况。",
     cumulative_chart: "累积图表",
     non_cumulative_chart: "非累积图表",
   },

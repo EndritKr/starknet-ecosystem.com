@@ -5,18 +5,20 @@ function CardProjectSkeleton() {
   return (
     <Flex
       direction="column"
-      borderRadius="lg"
-      align="center"
+      borderRadius="3xl"
       overflow="hidden"
-      p={1}
+      p={6}
+      bg="rgba(20, 20, 28, 0.75)"
       border="1px solid"
-      borderColor="whiteAlpha.200"
+      borderColor="whiteAlpha.100"
+      boxShadow="0 18px 40px rgba(8, 8, 16, 0.45)"
+      gap={4}
     >
-      <Skeleton w="full" h="110px" borderTopRadius="md" />
-      <SkeletonCircle mt="-36px" w="72px" h="72px" />
-      <Skeleton mt={4} w="30%" h="20px" />
-      <Skeleton mt={4} w="40%" h="20px" />
-      <Skeleton my={4} w="40%" h="20px" />
+      <Skeleton w="full" h="140px" borderRadius="2xl" />
+      <SkeletonCircle mt={-10} mx="auto" w="72px" h="72px" />
+      <Skeleton w="60%" h="18px" borderRadius="full" mx="auto" />
+      <Skeleton w="full" h="36px" borderRadius="xl" />
+      <Skeleton w="40%" h="14px" borderRadius="full" />
     </Flex>
   );
 }

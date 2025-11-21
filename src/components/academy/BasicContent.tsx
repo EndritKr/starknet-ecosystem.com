@@ -1,5 +1,6 @@
 import { Box, Flex, SimpleGrid, Text } from "@chakra-ui/layout";
 import { Image } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import type { LegacyRef } from "react";
 
 import type { ResourceItf } from "../../../data/academy";
@@ -10,12 +11,15 @@ import CardResourceSkeleton from "../card/CardResourceSkeleton";
 import DifficultyIcon from "../layout/DifficultyIcon";
 import NetworkLogos from "../layout/NetworkLogos";
 
+const MotionBox = motion(Box);
+
 export interface BasicContentProps {
   resources: ResourceItf[];
   keyword?: string;
   observe: LegacyRef<HTMLDivElement>;
   isLoading?: boolean;
 }
+
 function BasicContent({
   resources,
   keyword = "",
@@ -30,8 +34,7 @@ function BasicContent({
       const { network, difficulty, image } = resource;
       return (
         <Box
-          ref={index === resources.length - 1 ? observe : null}
-          // eslint-disable-next-line react/no-array-index-key
+          ref={index === filteredResources.length - 1 ? observe : null}
           key={`resource-${resource.name}-${index}`}
           flex={1}
         >
@@ -51,24 +54,40 @@ function BasicContent({
       );
     });
   };
+
   const renderLoadingState = () => {
-    return Array(20)
+    return Array(12)
       .fill(0)
       .map((_, index) => (
-        // eslint-disable-next-line react/no-array-index-key
-        <Box key={`project-skeleton-${index}`} flex={1}>
+        <Box key={`resource-skeleton-${index}`} flex={1}>
           <CardResourceSkeleton />
         </Box>
       ));
   };
 
   return isLoading || (filteredResources && filteredResources.length > 0) ? (
-    <SimpleGrid columns={{ sm: 1, lg: 2, xl: 3 }} spacing="20px" w="full">
+    <SimpleGrid
+      columns={{ sm: 1, lg: 2, xl: 3 }}
+      spacing={{ base: 6, md: 8 }}
+      w="full"
+    >
       {isLoading ? renderLoadingState() : renderData()}
     </SimpleGrid>
   ) : (
-    <Flex w="full" direction="column" justify="center" align="center" mt={20}>
-      <Text fontSize="xl">{t.common.no_resource}</Text>
+    <Flex
+      w="full"
+      direction="column"
+      justify="center"
+      align="center"
+      mt={20}
+      py={12}
+    >
+      <Text fontSize="2xl" fontWeight="bold" mb={2}>
+        {t.common.no_resource}
+      </Text>
+      <Text fontSize="lg" color="whiteAlpha.600">
+        Try a different search term
+      </Text>
     </Flex>
   );
 }
