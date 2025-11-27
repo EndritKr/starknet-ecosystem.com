@@ -286,17 +286,8 @@ const JobListRaw: FC<Props> = ({ id, project, job, last, observe }) => {
                 </Text>
               </HStack>
             </Flex>
-            {renderApplyBtn(t.jobs.apply_long)}
-            <HStack align="flex-start" mt={4} spacing={3}>
-              <Text fontSize="lg">👉</Text>
-              <Text fontSize="sm" color="whiteAlpha.600" lineHeight="1.6">
-                Please reference you found the job on starknet-ecosystem.com,
-                this helps us get more companies to post here, thanks!
-              </Text>
-            </HStack>
-          </Box>
-      </MotionFlex>
-    </Collapse>
+          </MotionFlex>
+        </Collapse>
       </MotionFlex >
     </MotionBox >
   );
