@@ -39,7 +39,7 @@ const JobListRaw: FC<Props> = ({ id, project, job, last, observe }) => {
   const { t } = useTranslate();
   const [opened, setOpened] = useState(false);
   const { query } = useRouter();
-  
+
   useEffect(() => {
     const { key } = query;
     if (key && typeof key === "string") {
@@ -47,7 +47,7 @@ const JobListRaw: FC<Props> = ({ id, project, job, last, observe }) => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [query]);
-  
+
   if (!project || !job) return null;
 
   const renderJobDetails = () => {
@@ -267,7 +267,7 @@ const JobListRaw: FC<Props> = ({ id, project, job, last, observe }) => {
             borderColor="primary.700"
           >
             {renderJobDetails()}
-            <Box
+            <Flex
               border="1px solid"
               borderColor="primary.700"
               bg="primary.900"
@@ -285,11 +285,20 @@ const JobListRaw: FC<Props> = ({ id, project, job, last, observe }) => {
                   this helps us get more companies to post here, thanks!
                 </Text>
               </HStack>
-            </Box>
-          </MotionFlex>
-        </Collapse>
+            </Flex>
+            {renderApplyBtn(t.jobs.apply_long)}
+            <HStack align="flex-start" mt={4} spacing={3}>
+              <Text fontSize="lg">👉</Text>
+              <Text fontSize="sm" color="whiteAlpha.600" lineHeight="1.6">
+                Please reference you found the job on starknet-ecosystem.com,
+                this helps us get more companies to post here, thanks!
+              </Text>
+            </HStack>
+          </Box>
       </MotionFlex>
-    </MotionBox>
+    </Collapse>
+      </MotionFlex >
+    </MotionBox >
   );
 };
 
