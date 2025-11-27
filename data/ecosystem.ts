@@ -46,6 +46,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -64,6 +65,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/realmsworld",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -82,6 +84,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -90,7 +93,7 @@ export const allProjects: Array<Project> = [
     name: "Carmine Options",
     shortName: "Carmine Options",
     description: "On Carmine, you can buy or sell options to hedge your risk or speculate on the price of assets.,",
-    tags: ["defi"],
+    tags: ["defi", "dao"],
     image: "CarmineOptions.jpg",
     network: {
       website: "https://app.carmine.finance/",
@@ -100,6 +103,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/uRs7j8w3bX",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -118,6 +122,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/RFbSXxtqUG",
       telegram: "https://t.me/Ekubo_Protocol",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -126,7 +131,7 @@ export const allProjects: Array<Project> = [
     name: "MySwap",
     shortName: "MySwap",
     description: "mySwap is the first AMM built on Starknet.\\n\\nIt is designed with a focus on security and gas cost, powered by the Cairo programming language developed by StarkWare.,",
-    tags: ["defi"],
+    tags: ["defi", "mobile"],
     image: "myswap.png",
     network: {
       website: "https://app.myswap.xyz/",
@@ -136,6 +141,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -154,6 +160,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/3D3JwTnsk5",
       telegram: "https://t.me/Simpleswap",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -162,7 +169,7 @@ export const allProjects: Array<Project> = [
     name: "Madara",
     shortName: "Madara",
     description: "🥷🩸 Madara is a ⚡ blazing fast ⚡ Starknet sequencer, based on substrate, powered by Rust 🦀,",
-    tags: ["infrastructure"],
+    tags: ["all", "security", "infrastructure"],
     image: "madara.jpg",
     network: {
       website: "https://www.madara.build/",
@@ -172,6 +179,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://t.me/MadaraStarknet",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -190,6 +198,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/3ytMUuz6EU",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -208,6 +217,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -216,7 +226,7 @@ export const allProjects: Array<Project> = [
     name: "Briq",
     shortName: "Briq",
     description: "NFT building and composition protocol. Get some briqs and build the dream.,",
-    tags: ["gamefi"],
+    tags: ["nft", "gamefi"],
     image: "briq.jpg",
     network: {
       website: "https://briq.construction/",
@@ -226,6 +236,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -244,6 +255,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -262,6 +274,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -280,6 +293,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/B4QJxhStV4",
       telegram: "https://t.me/beosin",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -298,6 +312,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://t.me/burakcsc",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -316,6 +331,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -334,6 +350,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/consensys",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -352,6 +369,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://t.me/joinchat/AAAAAE4-sCvat80zz8CntQ",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -370,6 +388,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -388,6 +407,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/PaCMRFdvWT",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -406,6 +426,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -424,6 +445,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -442,6 +464,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://t.me/zellic_io",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -460,6 +483,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://t.me/fuzzinglabs",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -468,7 +492,7 @@ export const allProjects: Array<Project> = [
     name: "OpenZeppelin",
     shortName: "OpenZeppelin",
     description: "OpenZeppelin Contracts written in Cairo for StarkNet,",
-    tags: ["tools"],
+    tags: ["tools", "security", "infrastructure", "nft", "defi"],
     image: "OpenZeppelin.png",
     network: {
       website: "https://www.openzeppelin.com/",
@@ -478,6 +502,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -496,6 +521,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -514,6 +540,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/realmsworld",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -532,6 +559,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/kyxqWFKMCF",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -550,6 +578,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/QcywHPgk4S",
       telegram: "https://t.me/oukeyunlianoklink",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -558,7 +587,7 @@ export const allProjects: Array<Project> = [
     name: "Starkscan",
     shortName: "Starkscan",
     description: "Starkscan is a Starknet blockchain explorer.,",
-    tags: ["tools"],
+    tags: ["tools", "infrastructure"],
     image: "starkscan.png",
     network: {
       website: "https://starkscan.co/",
@@ -568,6 +597,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/starknet-community",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -576,7 +606,7 @@ export const allProjects: Array<Project> = [
     name: "Voyager",
     shortName: "Voyager",
     description: "Voyager is a block explorer for Starknet, a ZK-rollup operating as an L2 network over Ethereum providing security and unlimited scale.",
-    tags: ["tools"],
+    tags: ["tools", "infrastructure"],
     image: "voyager.png",
     network: {
       website: "https://voyager.online/",
@@ -586,6 +616,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/channels/793094838509764618/912410047236149298",
       telegram: "https://t.me/StarknetVoyager",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -604,6 +635,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://t.me/chaineye",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -612,7 +644,7 @@ export const allProjects: Array<Project> = [
     name: "Layerswap",
     shortName: "Layerswap",
     description: "Layerswap is a tool for bridge StarkNet ETH to Layer2 wallets and exchanges.,",
-    tags: ["bridge"],
+    tags: ["bridge", "infrastructure", "starkex"],
     image: "Layerswap.jpg",
     network: {
       website: "https://layerswap.io/",
@@ -622,6 +654,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/layerswap",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -630,7 +663,7 @@ export const allProjects: Array<Project> = [
     name: "Orbiter",
     shortName: "Orbiter",
     description: "A decentralized optimistic cross-rollup bridge for transferring the Ethereumnative assets, which is the infrastructure of Layer 2.,",
-    tags: ["bridge"],
+    tags: ["bridge", "infrastructure"],
     image: "orbiter.svg",
     network: {
       website: "https://www.orbiter.finance/",
@@ -640,6 +673,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/FbztTBvnBT",
       telegram: "https://t.me/orbiterORB",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -648,7 +682,7 @@ export const allProjects: Array<Project> = [
     name: "Owlto",
     shortName: "Owlto",
     description: "Owlto Finance is a decentralized cross-rollup bridge that focuses on L2, providing 'safe, fast, cheap, and easy-to-use' services.,",
-    tags: ["bridge"],
+    tags: ["bridge", "infrastructure"],
     image: "owlto.png",
     network: {
       website: "https://owlto.finance/",
@@ -658,6 +692,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/owlto",
       telegram: "https://t.me/owltofinance",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -666,7 +701,7 @@ export const allProjects: Array<Project> = [
     name: "Rango",
     shortName: "Rango",
     description: "Rango is the ultimate cross-chain DEX and bridge aggregator.,",
-    tags: ["bridge"],
+    tags: ["bridge", "infrastructure"],
     image: "Rango.png",
     network: {
       website: "https://rango.exchange/",
@@ -676,6 +711,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -694,6 +730,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.gg/retrobridge",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -702,7 +739,7 @@ export const allProjects: Array<Project> = [
     name: "RhinoFi",
     shortName: "RhinoFi",
     description: "rhino.fi - The lightning-fast secure bridge for seamless cross-chain transactions,",
-    tags: ["bridge"],
+    tags: ["bridge", "defi"],
     image: "RhinoFi.jpg",
     network: {
       website: "https://rhino.fi/",
@@ -712,6 +749,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.gg/26sXx2KAhy",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -720,7 +758,7 @@ export const allProjects: Array<Project> = [
     name: "Starkgate",
     shortName: "Starkgate",
     description: "An Ethereum / Starknet Bridge by the StarkWare Team.,",
-    tags: ["bridge"],
+    tags: ["bridge", "starkware"],
     image: "starkgate.png",
     network: {
       website: "https://starkgate.starknet.io/",
@@ -730,6 +768,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -748,6 +787,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.gg/rpkPDR7pVV?utm_source=immunefi",
       telegram: "https://t.me/immunefi",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -766,6 +806,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.gg/KZWaFtPZJf",
       telegram: "https://t.me/+G_YxIv-XTFlhNWU0",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -784,6 +825,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -802,6 +844,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -810,7 +853,7 @@ export const allProjects: Array<Project> = [
     name: "LayerAkira",
     shortName: "Layer Akira",
     description: "first hybrid spot order book infrastructure on Starknet,",
-    tags: ["defi"],
+    tags: ["defi", "infrastructure"],
     image: "layer_akira.png",
     network: {
       website: "https://app.layerakira.xyz/",
@@ -820,6 +863,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.gg/UhVqUc537R",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -838,6 +882,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://t.me/+sH0ug1mZ_WtjNmM0",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -856,6 +901,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -864,7 +910,7 @@ export const allProjects: Array<Project> = [
     name: "avnu",
     shortName: "avnu",
     description: "\"avnu is a decentralized exchange protocol designed to offer the best execution.\\n\",",
-    tags: ["defi"],
+    tags: ["defi", "infrastructure", "tools"],
     image: "avnu.png",
     network: {
       website: "https://app.avnu.fi/",
@@ -874,6 +920,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/kfTV4WHpeW",
       telegram: "https://t.me/avnu_fi",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -882,7 +929,7 @@ export const allProjects: Array<Project> = [
     name: "Fibrous",
     shortName: "Fibrous",
     description: "Gathers all AMMs of Starknet at one place.,",
-    tags: ["defi"],
+    tags: ["defi", "infrastructure"],
     image: "fibrousfinance.png",
     network: {
       website: "https://app.fibrous.finance/",
@@ -892,6 +939,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -910,6 +958,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.gg/C7PHQaKdNX",
       telegram: "https://t.me/OOFinance",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -928,6 +977,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.gg/3Tu9XS3n5W",
       telegram: "https://t.me/TokenTable",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -946,6 +996,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.gg/cartridge",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -964,6 +1015,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -982,6 +1034,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.gg/eaVKXPmtWk",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1000,6 +1053,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1008,7 +1062,7 @@ export const allProjects: Array<Project> = [
     name: "Juno",
     shortName: "Juno",
     description: "A permissionless and open source proving layer-one blockchain that uses zkSTARK proofs generated by Starkware’s proving system.\\n,",
-    tags: ["infrastructure"],
+    tags: ["tools", "infrastructure"],
     image: "Juno.png",
     network: {
       website: "https://www.nethermind.io/juno",
@@ -1018,6 +1072,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/PaCMRFdvWT",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1036,6 +1091,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1044,7 +1100,7 @@ export const allProjects: Array<Project> = [
     name: "Pathfinder",
     shortName: "Pathfinder",
     description: "Pathfinder is a StarkNet full node as well as its execution engine. It operates by synchronising the StarkNet state from the L1 and locally re-executing all blocks.\\n,",
-    tags: ["infrastructure"],
+    tags: ["tools", "infrastructure"],
     image: "Pathfinder.jpg",
     network: {
       website: "https://equilibrium.co/projects/pathfinder",
@@ -1054,6 +1110,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://t.me/infrabulletin",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1072,6 +1129,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.gg/cartridge",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1090,6 +1148,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.gg/dojoengine",
       telegram: "https://t.me/dojoengine",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1108,6 +1167,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/gDyJBYUNDq",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1126,6 +1186,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discordapp.com/users/distracteddev",
       telegram: "https://t.me/starknetdev",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1144,6 +1205,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1162,6 +1224,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.gg/WNPSVWB52A",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1180,6 +1243,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1198,6 +1262,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1216,6 +1281,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1224,7 +1290,7 @@ export const allProjects: Array<Project> = [
     name: "Braavos",
     shortName: "Braavos",
     description: "Braavos is a self-custody wallet, empowering you to fully control your funds. Your keys, your coins.",
-    tags: ["wallet"],
+    tags: ["wallet", "mobile", "digital_id", "defi", "nft", "gamefi"],
     image: "Braavos.jpg",
     network: {
       website: "https://braavos.app/",
@@ -1234,6 +1300,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/9Ks7V5DN9z",
       telegram: "https://t.me/mybraavos",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1252,6 +1319,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/ledger",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1270,6 +1338,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.gg/b8EzYZJbAn",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1288,6 +1357,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/graphprotocol",
       telegram: "https://t.me/graphprotocol",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1296,7 +1366,7 @@ export const allProjects: Array<Project> = [
     name: "Apibara",
     shortName: "Apibara",
     description: "Apibara is an open-source tool to stream live web3 and web2 data.,",
-    tags: ["infrastructure"],
+    tags: ["infrastructure", "tools"],
     image: "Apibara.jpg",
     network: {
       website: "https://www.apibara.com/",
@@ -1306,6 +1376,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.gg/m7B92CNFNt",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1324,6 +1395,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/aG8XKuwsQd",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1332,7 +1404,7 @@ export const allProjects: Array<Project> = [
     name: "Footprint Analytics",
     shortName: "Footprint Analytics",
     description: "Footprint Analytics is a data platform blending web2 and web3 data with abstractions.\\nThe platform provides analytics, benchmarks and alerts to help with effective growth in GameFi and any web3 projects.\\n,",
-    tags: ["tools"],
+    tags: ["infrastructure", "tools"],
     image: "gootprint.png",
     network: {
       website: "https://www.footprint.network/",
@@ -1342,6 +1414,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.gg/3HYaR6USM7",
       telegram: "https://t.me/joinchat/4-ocuURAr2thODFh",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1360,6 +1433,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1378,6 +1452,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1396,6 +1471,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.gg/Eqp53YafYP",
       telegram: "https://www.t.me/nostrafinance",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1414,6 +1490,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.gg/G9Gxgujj8T",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1422,7 +1499,7 @@ export const allProjects: Array<Project> = [
     name: "Endurfi",
     shortName: "endurfi",
     description: "Endur is a platform offering xSTRK, a tradeable Liquid Staking Token (LST) on Starknet. xSTRK allows STRK token holders to stake their assets while maintaining liquidity.,",
-    tags: ["defi"],
+    tags: ["tools", "defi"],
     image: "endur.svg",
     network: {
       website: "https://app.endur.fi/",
@@ -1432,6 +1509,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://endur.fi/telegram",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1440,7 +1518,7 @@ export const allProjects: Array<Project> = [
     name: "Influence",
     shortName: "Influence",
     description: "Influence is an open-economy, space strategy MMO in which players own all of their content. Colonize asteroids, build infrastructure, discover technologies, engage in combat. Expand your influence across the belt.,",
-    tags: ["gamefi"],
+    tags: ["gamefi", "nft"],
     image: "influence.svg",
     network: {
       website: "https://game.influenceth.io/",
@@ -1450,6 +1528,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.gg/ZAZZageb",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1468,6 +1547,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1486,6 +1566,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1494,7 +1575,7 @@ export const allProjects: Array<Project> = [
     name: "Starknet.id",
     shortName: "Starknet.id",
     description: "Own your identity on Starknet. Register a .stark name, link it to your wallet, and use it across the ecosystem.",
-    tags: ["digital_id"],
+    tags: ["digital_id", "nft", "tools"],
     image: "starknetid.png",
     network: {
       website: "https://starknet.id/",
@@ -1504,6 +1585,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/8uS2Mgcsza",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1512,7 +1594,7 @@ export const allProjects: Array<Project> = [
     name: "Snapshot",
     shortName: "Snapshot",
     description: "Decentralized Trusted voting,",
-    tags: ["governance"],
+    tags: ["dao", "governance"],
     image: "Snapshot.jpg",
     network: {
       website: "https://snapshot.org/",
@@ -1522,6 +1604,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/MKDaqUBgjF",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1530,7 +1613,7 @@ export const allProjects: Array<Project> = [
     name: "Banxa",
     shortName: "Banxa",
     description: "Convert cryptocurrency to fiat or buy crypto with ease using Banxa. Fast, secure, and compliant fiat-to-crypto solutions trusted by businesses worldwide.",
-    tags: ["payments"],
+    tags: ["defi", "payments"],
     image: "Banxa.jpg",
     network: {
       website: "https://banxa.com/",
@@ -1540,6 +1623,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1558,6 +1642,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1576,6 +1661,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1594,6 +1680,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1612,6 +1699,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/PaCMRFdvWT",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1620,7 +1708,7 @@ export const allProjects: Array<Project> = [
     name: "Lava Network",
     shortName: "Lava Network",
     description: "Lava is an open-source protocol for reliable access to RPC data across all chains.,",
-    tags: ["infrastructure"],
+    tags: ["infrastructure", "tools"],
     image: "LavaNetwork.jpg",
     network: {
       website: "https://www.lavanet.xyz/",
@@ -1630,6 +1718,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.gg/Tbk5NxTCdA",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1648,6 +1737,7 @@ export const allProjects: Array<Project> = [
       discord: "https://chain.link/discord",
       telegram: "https://t.me/chainlinkofficial",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1656,7 +1746,7 @@ export const allProjects: Array<Project> = [
     name: "Pragma",
     shortName: "Pragma",
     description: "DeFi-native multi-chain oracle,\\ncreated by and for Starknet builders.\\n\\nIt is an open, modular and composable oracle infrastructure \\nthat integrates a wide range of DeFi primitives and multi-chain dApps.\\n,",
-    tags: ["infrastructure"],
+    tags: ["defi", "infrastructure"],
     image: "pragma.png",
     network: {
       website: "https://www.pragma.build/",
@@ -1666,6 +1756,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/N7sM7VzfJB",
       telegram: "https://t.me/+Xri-uUMpWXI3ZmRk",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1684,6 +1775,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://t.me/Pyth_Network",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1702,6 +1794,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/edgeX",
       telegram: "https://t.me/edgeX_exchange",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1720,6 +1813,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1738,6 +1832,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/paradex",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1756,6 +1851,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.gg/extendedapp",
       telegram: "https://t.me/extended_updates",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1774,6 +1870,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1782,7 +1879,7 @@ export const allProjects: Array<Project> = [
     name: "Calimero",
     shortName: "Calimero",
     description: "Calimero Network is building modular private shards on the NEAR blockchai\\nIt allows customisability with dApps, assets and privacy controls, and focuses on enterprise adoption.,",
-    tags: ["infrastructure"],
+    tags: ["infrastructure", "tools", "security"],
     image: "calimero.png",
     network: {
       website: "https://www.calimero.network/",
@@ -1792,6 +1889,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/kjP4GrafXj",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1810,6 +1908,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1828,6 +1927,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/Aa43XBgYvh",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1846,6 +1946,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1864,6 +1965,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/QpVxf742qx",
       telegram: "https://t.me/+Gw8l7OO71N1lZGEy",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1882,6 +1984,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/DUWMmtprz4",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1900,6 +2003,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.gg/Cymtg2f7pX",
       telegram: "https://t.me/chainstack",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1918,6 +2022,7 @@ export const allProjects: Array<Project> = [
       discord: "https://drpc.org/discord",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1936,6 +2041,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/T2hbgqfEnv",
       telegram: "https://t.me/getblockio_eng",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1954,6 +2060,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/consensys",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1972,6 +2079,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/2bdaPmG2R3",
       telegram: "https://t.me/nownodes",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1990,6 +2098,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.gg/quicknode",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -1998,7 +2107,7 @@ export const allProjects: Array<Project> = [
     name: "Reddio",
     shortName: "Reddio",
     description: "Reddio is a technology company that builds infrastructure for high-performance, low-gas blockchain systems using zkRollup technology. Reddio provides a suite of tools and services for developers to build decentralized applications with massive scalability and zero gas fee for off-chain transactions. Reddio is backed by top VCs such as Paradigm and Arena Holdings.,",
-    tags: ["infrastructure"],
+    tags: ["tools", "infrastructure", "nft", "starkex"],
     image: "reddio.png",
     network: {
       website: "https://www.reddio.com/",
@@ -2008,6 +2117,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/reddio",
       telegram: "https://t.me/Reddio_com",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2016,7 +2126,7 @@ export const allProjects: Array<Project> = [
     name: "Carbonable",
     shortName: "Carbonable",
     description: "Carbonable is the next generation of environmental investing. The platform allows users to invest in tokenized real-world nature-based assets.\\n,",
-    tags: ["defi"],
+    tags: ["defi", "nft", "green finance"],
     image: "carbonable.png",
     network: {
       website: "https://app.carbonable.io/",
@@ -2026,6 +2136,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.gg/Huspzn4teW",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2044,6 +2155,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2062,6 +2174,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2080,6 +2193,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/alchemyplatform",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2098,6 +2212,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2116,6 +2231,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/wdS6k4wz9H",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2134,6 +2250,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2152,6 +2269,7 @@ export const allProjects: Array<Project> = [
       discord: "https://starknet.io/discord",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2170,6 +2288,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2188,6 +2307,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2196,7 +2316,7 @@ export const allProjects: Array<Project> = [
     name: "Herodotus",
     shortName: "Herodotus",
     description: "Herodotus is building a succinct, general and future-proof storage primitive for L1 and L2.\\n\\nIts Storage Proof Platform provides infrastructure for applications that benefit from having access to on-chain history, such as account and contract transaction histories.\\n,",
-    tags: ["infrastructure"],
+    tags: ["infrastructure", "tools"],
     image: "Herodotus.jpg",
     network: {
       website: "https://herodotus.dev/",
@@ -2206,6 +2326,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.gg/t6p4qs4PBw",
       telegram: "https://t.me/+LAMFqDsCI1MwMTY0",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2224,6 +2345,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.gg/t6p4qs4PBw",
       telegram: "https://t.me/+LAMFqDsCI1MwMTY0",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2242,6 +2364,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2260,6 +2383,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2278,6 +2402,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://t.me/foundry_support",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2296,6 +2421,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2314,6 +2440,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://t.me/+qFK1dPXUyts0OTE0",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2332,6 +2459,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/s67HTdxpGA",
       telegram: "https://t.me/kaitoai2022",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2340,7 +2468,7 @@ export const allProjects: Array<Project> = [
     name: "Troves",
     shortName: "Troves",
     description: "Troves is a DeFi yield aggregator on Starknet that automatically optimises users’ yields across different strategies and DeFi protocols within a given strategy to maximise your returns!,",
-    tags: ["defi"],
+    tags: ["defi", "infrastructure", "tools"],
     image: "troves.svg",
     network: {
       website: "https://www.troves.fi/",
@@ -2350,6 +2478,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://www.troves.fi/tg",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2368,6 +2497,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2386,6 +2516,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/UNNeqeppEE",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2394,7 +2525,7 @@ export const allProjects: Array<Project> = [
     name: "Dope War",
     shortName: "Dope War",
     description: "Modular and extendable game system inspired by calculator game nostalgia.,",
-    tags: ["gamefi"],
+    tags: ["nft", "gamefi", "dao"],
     image: "DopeWar.jpg",
     network: {
       website: "https://linktr.ee/dope.wars",
@@ -2404,6 +2535,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2422,6 +2554,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.gg/WNPSVWB52A",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2440,6 +2573,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/VK9ZUy3aTV",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2458,6 +2592,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2476,6 +2611,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2494,6 +2630,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/2gjSqPQc9Q",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2512,6 +2649,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/channels/966680304028889118/1052936004803239976/1075054014967844906",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2530,6 +2668,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/elementmarket",
       telegram: "https://t.me/Naomi_nft",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2538,7 +2677,7 @@ export const allProjects: Array<Project> = [
     name: "Ready (formely Argent)",
     shortName: "Ready (formely Argent)",
     description: "Your onchain alternative to a bank. Get cashback on your spending, grow your savings, and spend globally with no fees.",
-    tags: ["wallet"],
+    tags: ["wallet", "digital_id", "defi", "nft", "gamefi", "mobile"],
     image: "Ready.png",
     network: {
       website: "https://www.ready.co/",
@@ -2548,6 +2687,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discordapp.com/invite/GWSyrHg",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2556,7 +2696,7 @@ export const allProjects: Array<Project> = [
     name: "Bitget Wallet",
     shortName: "Bitget Wallet",
     description: "Your Web3 Crypto Wallet for effortless trading. One of the top non-custodial multi-chain crypto wallet, integrates Wallet, Swap, NFT Market, DApp and Discover in a single location, allowing users to enter the era of Web 3.0 with ease.,",
-    tags: ["payments"],
+    tags: ["wallet", "Defi", "NFT", "digital_id", "infrastructure", "payments"],
     image: "BitgetWallet.jpg",
     network: {
       website: "https://www.bitget.com/",
@@ -2566,6 +2706,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/bitget",
       telegram: "https://t.me/BitgetFuturesTrading",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2584,6 +2725,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2592,7 +2734,7 @@ export const allProjects: Array<Project> = [
     name: "OKX",
     shortName: "OKX",
     description: "A multi-chain, cross-chain decentralized exchange aggregator of 300+ other DEXs and approximately 15 bridges, with 200,000+ coins and more than 20 blockchains supported.,",
-    tags: ["wallet"],
+    tags: ["DEX, wallet, multi-chain, cross-chain, OKX, bridge, blockchain", "wallet"],
     image: "OKX.jpg",
     network: {
       website: "https://www.okx.com/",
@@ -2602,6 +2744,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2620,6 +2763,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2638,6 +2782,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2656,6 +2801,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2674,6 +2820,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/4y296W6jaq",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2692,6 +2839,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.gg/Z24N64cD",
       telegram: "https://t.me/pwndao",
     },
+
     isLive: false,
     isTestnetLive: true,
   },
@@ -2710,6 +2858,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://t.me/afk_aligned_fam_kernel",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2728,6 +2877,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2746,6 +2896,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/0xcarve",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2764,6 +2915,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2772,7 +2924,7 @@ export const allProjects: Array<Project> = [
     name: "Uncap",
     shortName: "Uncap",
     description: "BTC-backed CDP stablecoin. Deposit Bitcoin, mint USDU at your own interest rate.,",
-    tags: ["defi"],
+    tags: ["defi", "infrastructure"],
     image: "Uncap.jpg",
     network: {
       website: "https://uncap.finance/",
@@ -2782,6 +2934,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2800,6 +2953,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/TJtkaB6MEQ",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2808,7 +2962,7 @@ export const allProjects: Array<Project> = [
     name: "ForgeYields",
     shortName: "ForgeYields",
     description: "Forge Yields is a DeFi aggregator built on Starknet, designed to help users access the best yields for their assets.\\n,",
-    tags: ["defi"],
+    tags: ["defi", "tools"],
     image: "ForgeYields.jpg",
     network: {
       website: "https://app.forgeyields.com",
@@ -2818,6 +2972,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/cgRCuHtqGy",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2836,6 +2991,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2854,6 +3010,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://t.me/nooncapital",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2872,6 +3029,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2890,6 +3048,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/cdp",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2908,6 +3067,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/P8UUNGtHZs",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2926,6 +3086,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://t.me/+eLV7W-lh8as4NjMy",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2944,6 +3105,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://t.me/+bVxXaalfhF8wMDFl",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2962,6 +3124,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://t.me/powgame",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2980,6 +3143,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://t.me/+CpwCDpRK-75iNTRk",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -2998,6 +3162,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3016,6 +3181,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/7feudTFMXB",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3034,6 +3200,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/4eGJV3N8Bk",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3052,6 +3219,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3070,6 +3238,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/tokenterminal",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3088,6 +3257,7 @@ export const allProjects: Array<Project> = [
       discord: "t.co/6eLY0pOKJX",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3106,6 +3276,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/fxjJFe7QyN",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3124,6 +3295,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: false,
     isTestnetLive: true,
   },
@@ -3142,6 +3314,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3160,6 +3333,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://t.me/CoinMarketCapAnnouncements",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3178,6 +3352,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/EhrkaCH",
       telegram: "https://t.me/coingecko",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3196,6 +3371,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://t.me/the_block_crypto",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3214,6 +3390,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3232,6 +3409,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/XNgMb5tQN7",
       telegram: "https://telegram.me/dexscreenerchat",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3250,6 +3428,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://t.me/nansen_digest",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3268,6 +3447,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://t.me/messaricrypto",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3286,6 +3466,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3304,6 +3485,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: false,
     isTestnetLive: false,
   },
@@ -3322,6 +3504,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3340,6 +3523,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://t.me/+IopcODWeG7wxZDhl",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3358,6 +3542,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://t.me/tongoxyz",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3376,6 +3561,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: false,
     isTestnetLive: true,
   },
@@ -3384,7 +3570,7 @@ export const allProjects: Array<Project> = [
     name: "Olas",
     shortName: "Olas",
     description: "Olas is an open protocol for sharing, interrogating, and aggregating information.,",
-    tags: ["defi"],
+    tags: ["defi", "tools"],
     image: "Olas.jpg",
     network: {
       website: "https://olas.info/",
@@ -3394,6 +3580,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3412,6 +3599,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3430,6 +3618,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/nearprotocol",
       telegram: "https://t.me/cryptonear",
     },
+
     isLive: false,
     isTestnetLive: false,
   },
@@ -3448,6 +3637,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3466,6 +3656,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://t.me/talfao",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3484,6 +3675,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3502,6 +3694,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/RKNxhpczfw",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3520,6 +3713,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://x.com/RocketXexchange",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3538,6 +3732,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3556,6 +3751,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/ktbvm8Nkcr",
       telegram: "https://t.me/joinchat/VcqxYkStIDsyN2Rh",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3574,6 +3770,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/buildoncircle",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3592,6 +3789,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3610,6 +3808,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3628,6 +3827,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3646,6 +3846,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3664,6 +3865,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3682,6 +3884,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3700,6 +3903,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/TXMRDWVTmp",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3718,6 +3922,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3736,6 +3941,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/8uS2Mgcsza",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3754,6 +3960,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/gjteVmHA5N",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3772,6 +3979,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3780,7 +3988,7 @@ export const allProjects: Array<Project> = [
     name: "Stark Arcade",
     shortName: "Stark Arcade",
     description: "Starknet Arcade Hub is a tribute to our NFT community and one of the largest mini-games hub for the Starknet Degens,",
-    tags: [],
+    tags: ["GameFi"],
     image: "Stark Arcade.jpg",
     network: {
       website: "https://www.starkarcade.com/",
@@ -3790,6 +3998,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/erUkMnjVDw",
       telegram: "https://t.me/starkarcade",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3798,7 +4007,7 @@ export const allProjects: Array<Project> = [
     name: "Gecko Terminal",
     shortName: "Gecko Terminal",
     description: "GeckoTerminal is a DEX tracker and crypto price charting tool. Track real-time cryptocurrency prices, trading volume, transactions, liquidity, and more market data across all blockchains.,\n    tags: [DeFi, tools, Security],",
-    tags: [],
+    tags: ["DeFi", "tools", "Security"],
     image: "GeckoTerminal.jpg",
     network: {
       website: "https://www.geckoterminal.com/",
@@ -3808,6 +4017,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3816,7 +4026,7 @@ export const allProjects: Array<Project> = [
     name: "Chainspect",
     shortName: "Chainspect",
     description: "Chainspect is a blockchain analytics platform aiming to be an all-in-one solution for comparing networks. Make better decisions with our real-time insights and up-to-date metrics for the most widely used blockchains, including Starknet.,",
-    tags: [],
+    tags: ["tools"],
     image: "Chainspect.jpg",
     network: {
       website: "https://chainspect.app/",
@@ -3826,6 +4036,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/nnmJf56XYU",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3834,7 +4045,7 @@ export const allProjects: Array<Project> = [
     name: "Metacube",
     shortName: "Metacube",
     description: "Metacube is a Free2Play Massive Multiplayer Game, where the winners of ephemeral events get their assets distributed on Starknet,",
-    tags: [],
+    tags: ["gamefi", "nft", "mobile"],
     image: "Metacube.jpg",
     network: {
       website: "https://play.metacube.games/",
@@ -3844,6 +4055,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/FGV6HkMbNj",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3852,7 +4064,7 @@ export const allProjects: Array<Project> = [
     name: "Starknet.unity",
     shortName: "Starknet.unity",
     description: "The Starknet.unity is endeavoring to take the StarknetJS experience into unity engine,",
-    tags: [],
+    tags: ["infrastructure", "tools"],
     image: "StarknetUnity.jpeg",
     network: {
       website: "",
@@ -3862,6 +4074,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3870,7 +4083,7 @@ export const allProjects: Array<Project> = [
     name: "Redstone Oracle",
     shortName: "Redstone Oracle",
     description: "RedStone On-Demand Oracle delivers data feeds for 1,100+ assets, with a few seconds refresh interval to Starknet & StarkEx ecosystems. We provide: long-tail, LP, staked, ecosystem-native tokens, indexes, commodities, Forex and custom data feeds, i.e. NFT related.,",
-    tags: [],
+    tags: ["tools", "infrastructure", "bridge", "defi"],
     image: "RedstoneOracle.png",
     network: {
       website: "https://stake.redstone.finance/",
@@ -3880,6 +4093,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3888,7 +4102,7 @@ export const allProjects: Array<Project> = [
     name: "KasarLabs",
     shortName: "KasarLabs",
     description: "A Starknet engineering and research laboratory.,",
-    tags: [],
+    tags: ["infrastructure", "tools"],
     image: "Kasarlabs.jpg",
     network: {
       website: "https://kasar.io/",
@@ -3898,6 +4112,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3906,7 +4121,7 @@ export const allProjects: Array<Project> = [
     name: "Dynamic",
     shortName: "Dynamic",
     description: "Your multi-chain web3 auth platform. A smart, beautiful and dynamic multi-chain wallet login flow, and powerful developer tools to match.,",
-    tags: [],
+    tags: ["wallet", "digital_id", "infrastructure", "tools"],
     image: "Dynamic.png",
     network: {
       website: "https://demo.dynamic.xyz/",
@@ -3916,6 +4131,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3924,7 +4140,7 @@ export const allProjects: Array<Project> = [
     name: "Starknet jvm",
     shortName: "Starknet jvm",
     description: "Starknet SDK for java and other JVM languages",
-    tags: [],
+    tags: ["tools"],
     image: "StarknetJVM.png",
     network: {
       website: "",
@@ -3934,6 +4150,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3942,7 +4159,7 @@ export const allProjects: Array<Project> = [
     name: "Starknet.py",
     shortName: "Starknet.py",
     description: "Python SDK for Starknet,",
-    tags: [],
+    tags: ["tools"],
     image: "Starknetpy.png",
     network: {
       website: "https://starknetpy.readthedocs.io/en/latest/",
@@ -3952,6 +4169,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3960,7 +4178,7 @@ export const allProjects: Array<Project> = [
     name: "Starkneat react",
     shortName: "Starkneat react",
     description: "A collection of React hooks for Starknet,",
-    tags: [],
+    tags: ["tools"],
     image: "StarknetReact.png",
     network: {
       website: "https://www.starknet-react.com/docs/getting-started",
@@ -3970,6 +4188,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3978,7 +4197,7 @@ export const allProjects: Array<Project> = [
     name: "Starknet.js",
     shortName: "Starknet.js",
     description: "Javascript library for Starknet. Build your dapp or any other Starknet web project today.,",
-    tags: [],
+    tags: ["tools"],
     image: "StarknetJS.png",
     network: {
       website: "https://starknetjs.com/",
@@ -3988,6 +4207,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -3996,7 +4216,7 @@ export const allProjects: Array<Project> = [
     name: "Hardhat Plugin",
     shortName: "Hardhat Plugin",
     description: "If you've used Hardhat and want to develop for Starknet, this plugin might come in hand.,",
-    tags: [],
+    tags: ["tools"],
     image: "StarknetHardhatPlugin.png",
     network: {
       website: "/starknet-hardhat-plugin/",
@@ -4006,6 +4226,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -4024,6 +4245,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -4042,6 +4264,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -4060,6 +4283,7 @@ export const allProjects: Array<Project> = [
       discord: "",
       telegram: "https://t.me/trainprotocol",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -4078,6 +4302,7 @@ export const allProjects: Array<Project> = [
       discord: "https://discord.com/invite/midasrwa",
       telegram: "https://t.me/midasrwa",
     },
+
     isLive: true,
     isTestnetLive: true,
   },
@@ -4089,13 +4314,15 @@ export const allProjects: Array<Project> = [
   // description: "Dmail Network is building an AI-powered decentralized infrastructure which allows users to stay informed and connected with intelligent, seamless messaging and notifications.",
   // tags: ["infrastructure", "tools", "digital_id"],
   // image: "dmail.png",
-  // network: 
+  // network: {
   // website: "https://dmail.ai",
   // github: "https://github.com/dmailofficial/dmail",
   // twitter: "https://twitter.com/dmailofficial",
   // medium: "https://medium.com/@dmail_official",
   // discord: "https://discord.com/invite/QbvaeqwMFg",
-  // telegram: "https://t.me/dmailofficial",,
+  // telegram: "https://t.me/dmailofficial",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -4106,13 +4333,15 @@ export const allProjects: Array<Project> = [
   // description: "Nimbora is a DeFi middleware platform that seeks to offer users the best prices for accessing a wide range of DeFi products and services across blockchains.",
   // tags: ["tools", "defi", "infrastructure"],
   // image: "nimbora.jpg",
-  // network: 
+  // network: {
   // website: "https://app.nimbora.io/",
   // github: "",
   // twitter: "https://twitter.com/Nimbora_",
   // medium: "",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -4123,12 +4352,14 @@ export const allProjects: Array<Project> = [
   // description: "Claim your Social Space ✨ .strk .cairo .starknet and more identity options are available. Share your socials, trust score, and a lot more🍭 all in one place.",
   // tags: ["digital_id", "nft"],
   // image: "starknet-social.png",
-  // network: 
+  // network: {
   // website: "https://starknet.social/",
   // github: "https://github.com/dolven-labs-catalyst",
   // twitter: "https://twitter.com/StarknetSocial",
   // medium: "https://medium.com/@starknetsocial",
-  // discord: "https://discord.dolvenlabs.com/",,
+  // discord: "https://discord.dolvenlabs.com/",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -4139,13 +4370,15 @@ export const allProjects: Array<Project> = [
   // description: "Starknet Explorer with full decoding, advanced analytics and prime token/NFT support.",
   // tags: ["tools", "infrastructure"],
   // image: "viewblock.png",
-  // network: 
+  // network: {
   // website: "https://viewblock.io/fr/starknet",
   // github: "https://github.com/ViewBlock",
   // twitter: "https://twitter.com/ViewBlock",
   // medium: "https://blog.viewblock.io",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -4156,13 +4389,15 @@ export const allProjects: Array<Project> = [
   // description: "An NFT acting as Proof of OG on Starknet",
   // tags: ["nft", "defi", "gamefi", "governance"],
   // image: "0xStarks.png",
-  // network: 
+  // network: {
   // website: "",
   // github: "",
   // twitter: "https://twitter.com/Gen0_Stark",
   // medium: "",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // },
@@ -4173,13 +4408,15 @@ export const allProjects: Array<Project> = [
   // description: "Thoth is a Cairo/Starknet analyzer, disassembler & decompiler written in Python 3.",
   // tags: ["tools", "security"],
   // image: "",
-  // network: 
+  // network: {
   // website: "",
   // github: "https://github.com/FuzzingLabs/thoth",
   // twitter: "",
   // medium: "",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -4190,13 +4427,15 @@ export const allProjects: Array<Project> = [
   // description: "ZKEX is a bridgeless multi-chain order book DEX, secured with zero-knowledge proofs, powered by zkLink, Starknet, and zkSync.",
   // tags: ["defi"],
   // image: "zkex-logo-rounded.png",
-  // network: 
+  // network: {
   // website: "https://zkex.com",
   // github: "",
   // twitter: "https://twitter.com/ZKEX_Official",
   // medium: "https://medium.com/@zkex",
   // discord: "https://discord.gg/ctDAYrrNTH",
-  // telegram: "https://t.me/ZKEX_Official",,
+  // telegram: "https://t.me/ZKEX_Official",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // },
@@ -4207,13 +4446,15 @@ export const allProjects: Array<Project> = [
   // description: "Founded by a group of cryptography researchers and smart contract engineers in North America, Verilog Solutions elevates the security standard for Web3 ecosystems by being a full-stack Web3 security firm covering smart contract security, consensus security, and operational security for Web3 projects. Verilog Solutions team works closely with major ecosystems and Web3 projects and applies a quality above quantity approach with a continuous security model. Verilog Solutions onboards the best and most innovative projects and provides the best-in-class advisory service on security needs, including on-chain and off-chain components.",
   // tags: ["infrastructure"],
   // image: "verilog.png",
-  // network: 
+  // network: {
   // website: "https://www.verilog.solutions/",
   // github: "",
   // twitter: "https://twitter.com/verilog_audit",
   // medium: "",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -4224,13 +4465,15 @@ export const allProjects: Array<Project> = [
   // description: "SithSwap is a next-gen AMM on Starknet featuring stable + volatile swaps, ultra-low fees & slippage, gauged (3,3) rewards & bribes governed by veNFTs",
   // tags: ["defi"],
   // image: "sithswap.png",
-  // network: 
+  // network: {
   // website: "https://sithswap.com/",
   // github: "https://github.com/SithSwap",
   // twitter: "https://twitter.com/SithSwap",
   // medium: "https://mirror.xyz/sithswap.eth",
   // discord: "https://discord.gg/gAD2wuzeNf",
-  // telegram: "https://t.me/SithWars",,
+  // telegram: "https://t.me/SithWars",
+  // },
+
   // isLive: true,
   // isTestnetLive: false,
   // },
@@ -4241,13 +4484,15 @@ export const allProjects: Array<Project> = [
   // description: "Dolven Labs is a DAO Based Ecosystem Catalyst for projects built on the Starknet Network, Dolven Labs aims to be the future of investing, deal flow, and value creation in the Starknet Ecosystem.",
   // tags: ["defi", "dao", "governance"],
   // image: "dolven-logo.png",
-  // network: 
+  // network: {
   // website: "https://dolvenlabs.com/",
   // github: "https://github.com/dolven-labs-catalyst",
   // twitter: "https://twitter.com/dolvenlabs",
   // medium: "https://medium.com/@dolvenlabs",
   // discord: "https://discord.gg/UG5tkPa3xn",
-  // telegram: "https://t.me/dolven_global",,
+  // telegram: "https://t.me/dolven_global",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // },
@@ -4258,13 +4503,15 @@ export const allProjects: Array<Project> = [
   // description: "Giza is a Machine Learning platform built on Starknet focused on fully on-chain model deployment scaling.",
   // tags: ["infrastructure"],
   // image: "giza.png",
-  // network: 
+  // network: {
   // website: "https://gizatech.xyz/",
   // github: "",
   // twitter: "https://twitter.com/gizatechxyz",
   // medium: "https://mirror.xyz/gizatech.eth",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // },
@@ -4275,13 +4522,15 @@ export const allProjects: Array<Project> = [
   // description: "StarkDefi is a permissionless and trustless hub of comprehensive Defi solutions built to leverage the Decentralized ZK-Rollup on Starknet's L2 Network over Ethereum. Starting with a highly intuitive Automated Market Maker (AMM), StarkDefi will strategically release other planned defi solutions to cement its position as the ultimate one-stop platform for all defi solutions on Starknet.",
   // tags: ["defi"],
   // image: "starkdefi.png",
-  // network: 
+  // network: {
   // website: "https://starkdefi.com/",
   // github: "https://github.com/Starkdefi",
   // twitter: "https://twitter.com/StarkDefi",
   // medium: "https://starkdefi.medium.com/",
   // discord: "https://discord.com/invite/starkdefi",
-  // telegram: "https://t.me/starkdefi_ann",,
+  // telegram: "https://t.me/starkdefi_ann",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -4292,13 +4541,15 @@ export const allProjects: Array<Project> = [
   // description: "Building Fountain engine, solve2mint framework, svg/html/midi libraries and other infrastructure for onchain gaming, art, and decentralized innovation protocol",
   // tags: ["infrastructure"],
   // image: "",
-  // network: 
+  // network: {
   // website: "https://www.topology.gg/",
   // github: "https://github.com/topology-gg",
   // twitter: "https://twitter.com/topology_gg",
   // medium: "",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: true,
   // },
@@ -4309,13 +4560,15 @@ export const allProjects: Array<Project> = [
   // description: "Trusta Labs aims to continuously develop MEDIA Score as the infrastructure for on-chain user reputation assessment. In the KYA (Know Your Account) product called TrustGo from Trusta Labs, every user can look up their own unique MEDIA Score on Starknet. It helps to fairly identify accounts that contribute to the Starknet ecosystem. Through MEDIA Score, users can gain a deeper understanding of their on-chain activities and value, while project teams can accurately allocate resources and incentives to users who truly contribute. TrustGo and MEDIA score will accelerate the grow of Starknet ecosystem.",
   // tags: ["digital_id", "infrastructure", "tools", "security"],
   // image: "trustgo.jpg",
-  // network: 
+  // network: {
   // website: "https://trustgo.trustalabs.ai/",
   // github: "https://github.com/TrustaLabs",
   // twitter: "https://twitter.com/TrustaLabs",
   // medium: "https://medium.com/@trustalabs.ai",
   // discord: "https://discord.com/invite/rtwSQxDM6F",
-  // telegram: "https://t.me/Trusta_Labs",,
+  // telegram: "https://t.me/Trusta_Labs",
+  // },
+
   // isLive: true,
   // isTestnetLive: false,
   // },
@@ -4326,13 +4579,15 @@ export const allProjects: Array<Project> = [
   // description: "Explore the Starknet realm with StarkPulse.\nWallet Tracking, Token Discovery, Pool Detection, and APY Insights at Your Fingertips. And more to come soon.\n",
   // tags: ["defi", "infrastructure", "tools"],
   // image: "starkpulse.jpg",
-  // network: 
+  // network: {
   // website: "https://www.starkpulse.xyz/",
   // github: "",
   // twitter: "",
   // medium: "",
   // discord: "https://discord.gg/invite/avnu-fi",
-  // telegram: "https://t.me/StarkPulseBot",,
+  // telegram: "https://t.me/StarkPulseBot",
+  // },
+
   // isLive: true,
   // isTestnetLive: false,
   // },
@@ -4343,13 +4598,15 @@ export const allProjects: Array<Project> = [
   // description: "JediSwap is a fully permissionless and composable AMM on Starknet. Users can swap assets instantaneously with 0 gas fees while relying on Ethereum security. Anyone can add a pair on Jediswap, and builders can build more advanced applications using JediSwap open sourced contracts",
   // tags: ["defi"],
   // image: "jediswap.svg",
-  // network: 
+  // network: {
   // website: "https://jediswap.xyz/",
   // github: "https://github.com/jediswaplabs",
   // twitter: "https://twitter.com/jediswap",
   // medium: "https://mirror.xyz/jediswap.eth",
   // discord: "https://discord.gg/jediswap",
-  // telegram: "https://t.me/jediswap",,
+  // telegram: "https://t.me/jediswap",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -4360,13 +4617,15 @@ export const allProjects: Array<Project> = [
   // description: "Import Maker protocol",
   // tags: ["defi"],
   // image: "makerdao.png",
-  // network: 
+  // network: {
   // website: "https://makerdao.com/en/",
   // github: "https://github.com/makerdao/starknet-dai-bridge",
   // twitter: "https://twitter.com/MakerDAO",
   // medium: "",
   // discord: "",
-  // telegram: "https://t.me/makerdaoOfficial",,
+  // telegram: "https://t.me/makerdaoOfficial",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // },
@@ -4377,13 +4636,15 @@ export const allProjects: Array<Project> = [
   // description: "Unlocking the programmability of principal and yield with automation.",
   // tags: ["dao", "defi", "digital_id", "payments"],
   // image: "sandclock.png",
-  // network: 
+  // network: {
   // website: "https://www.sandclock.org/",
   // github: "https://github.com/lindy-labs",
   // twitter: "https://twitter.com/SandclockOrg",
   // medium: "https://medium.com/sandclock",
   // discord: "https://discord.gg/TMtbPQvWJV",
-  // telegram: "https://t.me/sandclockorg",,
+  // telegram: "https://t.me/sandclockorg",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // },
@@ -4394,13 +4655,15 @@ export const allProjects: Array<Project> = [
   // description: "Serity is a PCV-based protocol for the minting and trading of yield-backed synthetic assets.",
   // tags: ["defi"],
   // image: "serity.png",
-  // network: 
+  // network: {
   // website: "https://serity.finance/",
   // github: "https://github.com/Serity-Finance",
   // twitter: "https://twitter.com/SerityFinance",
   // medium: "",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // },
@@ -4411,13 +4674,15 @@ export const allProjects: Array<Project> = [
   // description: "Bridge and DeFi pooling",
   // tags: ["defi", "bridge"],
   // image: "",
-  // network: 
+  // network: {
   // website: "https://suez.dev/",
   // github: "https://github.com/agolajko/suez",
   // twitter: "https://twitter.com/SuezBridge",
   // medium: "",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // isHidden: true,
@@ -4429,13 +4694,15 @@ export const allProjects: Array<Project> = [
   // description: "Building the next generation of DeFi on Starknet. First offering is an AMM, with other DeFi products to follow.",
   // tags: ["defi"],
   // image: "starkswap.png",
-  // network: 
+  // network: {
   // website: "https://www.starkswap.co/",
   // github: "https://github.com/Starkswap",
   // twitter: "https://twitter.com/starkswap",
   // medium: "",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // },
@@ -4446,13 +4713,15 @@ export const allProjects: Array<Project> = [
   // description: "zkLend is the native L2 money-market protocol built on Starknet, combining zk-rollup scalability, superior transaction speed, and cost-savings with Ethereum’s security.",
   // tags: ["defi"],
   // image: "zklend.svg",
-  // network: 
+  // network: {
   // website: "https://zklend.com/",
   // github: "",
   // twitter: "https://twitter.com/zkLend",
   // medium: "https://medium.com/zklend",
   // discord: "https://discord.com/invite/3v7RhwtJ8S",
-  // telegram: "https://t.me/zkLendAnnouncements",,
+  // telegram: "https://t.me/zkLendAnnouncements",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -4463,13 +4732,15 @@ export const allProjects: Array<Project> = [
   // description: "Bitmap Box is an on-chain block-building game. Assemble and disassemble your creations, create new games on top of its open protocol.",
   // tags: ["nft"],
   // image: "bitmapbox.jpeg",
-  // network: 
+  // network: {
   // website: "https://www.bitmapbox.xyz/",
   // github: "https://github.com/bitmap-box",
   // twitter: "https://twitter.com/bitmapbox",
   // medium: "",
   // discord: "https://discord.com/invite/EBn3Vu9cu2",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: true,
   // },
@@ -4480,13 +4751,15 @@ export const allProjects: Array<Project> = [
   // description: "A decentralized game of conquest powered by Starknet. An almost infinite territory that can be conquered through alliances and wars",
   // tags: ["nft", "gamefi"],
   // image: "eykar.png",
-  // network: 
+  // network: {
   // website: "https://eykar.org/",
   // github: "",
   // twitter: "https://twitter.com/AgeOfEykar",
   // medium: "",
   // discord: "https://discord.com/invite/rpksM5uCk5",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // },
@@ -4497,13 +4770,15 @@ export const allProjects: Array<Project> = [
   // description: "GoL2 on Starknet – an on-chain iteration of the classic Game of Play by John Conway. ",
   // tags: ["gamefi"],
   // image: "GoL2-icon.png",
-  // network: 
+  // network: {
   // website: "https://gol2.io",
   // github: "https://github.com/yuki-wtf/GoL2-Contract",
   // twitter: "https://twitter.com/GoL2io",
   // medium: "https://medium.com/@yuki_labs/gol2-an-experiment-in-layer-2-gaming-9c537b7d009c",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -4514,13 +4789,15 @@ export const allProjects: Array<Project> = [
   // description: "L2 -> L1 Bridge for the ERC1155",
   // tags: ["bridge", "defi"],
   // image: "",
-  // network: 
+  // network: {
   // website: "https://kubribridge.vercel.app/",
   // github: "",
   // twitter: "",
   // medium: "",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: true,
   // },
@@ -4531,13 +4808,15 @@ export const allProjects: Array<Project> = [
   // description: "open source MMOCCG (Massively Multiplayer On-Chain Composable Game) of economics and Chivalry",
   // tags: ["gamefi", "nft"],
   // image: "loot.jpeg",
-  // network: 
+  // network: {
   // website: "https://bibliothecadao.xyz/",
   // github: "",
   // twitter: "https://twitter.com/LootRealms",
   // medium: "",
   // discord: "https://discord.com/invite/HvqzqE3Mfu",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -4548,13 +4827,15 @@ export const allProjects: Array<Project> = [
   // description: "NFT Platform on Ethereum Layer 2 ZK Rollup",
   // tags: ["nft"],
   // image: "mintsquare.png",
-  // network: 
+  // network: {
   // website: "https://mintsquare.io/",
   // github: "",
   // twitter: "https://twitter.com/MintSquareNFT",
   // medium: "",
   // discord: "discord.gg/EDm8vm4MgY",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: true,
   // },
@@ -4565,13 +4846,15 @@ export const allProjects: Array<Project> = [
   // description: "Phi（Φ） is a decentralized metaverse on Starknet, with lands generated from ENS and buildings from On-Chain Activity Data.",
   // tags: ["gamefi"],
   // image: "phi.jpeg",
-  // network: 
+  // network: {
   // website: "https://phi-xyz.notion.site/phi-xyz/532af6de66e64c7c883d552d301b8020",
   // github: "",
   // twitter: "https://twitter.com/phi_xyz",
   // medium: "",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // },
@@ -4582,13 +4865,15 @@ export const allProjects: Array<Project> = [
   // description: "Aspect is an NFT marketplace powered by Starknet, a ZK rollup L2 on ETH. Buy, Sell, and Create in the meta economy.",
   // tags: ["nft"],
   // image: "aspect.png",
-  // network: 
+  // network: {
   // website: "https://testnet.aspect.co/",
   // github: "https://github.com/playoasis",
   // twitter: "https://twitter.com/aspectdotco",
   // medium: "",
   // discord: "https://discord.com/invite/aR2U7KtbgD",
-  // telegram: "https://t.me/aspectco",,
+  // telegram: "https://t.me/aspectco",
+  // },
+
   // isLive: false,
   // isTestnetLive: true,
   // },
@@ -4599,13 +4884,15 @@ export const allProjects: Array<Project> = [
   // description: "Generating the Mandelbrot Set on Starknet and storing the data to required to reconstruct the plot on-chain. Was created as a proof of concept for leveraging L2s to create fully on chain NFTs.",
   // tags: ["nft"],
   // image: "",
-  // network: 
+  // network: {
   // website: "",
   // github: "https://github.com/Orland0x/StarknetFractals",
   // twitter: "",
   // medium: "",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // },
@@ -4616,13 +4903,15 @@ export const allProjects: Array<Project> = [
   // description: "Verifying Storage Proofs from Ethereum",
   // tags: ["infrastructure"],
   // image: "",
-  // network: 
+  // network: {
   // website: "",
   // github: "https://github.com/OilerNetwork/fossil/tree/master/contracts/starknet",
   // twitter: "",
   // medium: "",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // },
@@ -4633,13 +4922,15 @@ export const allProjects: Array<Project> = [
   // description: "Yagi is a network of keepers on Starknet L2 that automate protocol actions.",
   // tags: ["infrastructure", "defi"],
   // image: "yagi.svg",
-  // network: 
+  // network: {
   // website: "https://yagi.fi/",
   // github: "https://github.com/OilerNetwork/fossil/tree/master/contracts/starknet",
   // twitter: "https://twitter.com/yagi_fi",
   // medium: "",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: true,
   // },
@@ -4648,21 +4939,17 @@ export const allProjects: Array<Project> = [
   // name: "StarkGuardians",
   // shortName: "StarkGuardians",
   // description: "StarkGuardians - First NFT collection of #StarkNet with decrease in supply. NFT Audit and Investigation Service 🔍",
-  // tags: [
-  // "nft",
-  // "tools",
-  // "infrastructure",
-  // "security",
-  // "governance",
-  // ],
+  // tags: ["nft", "tools", "infrastructure", "security", "governance"],
   // image: "StarkGuardians.jpeg",
-  // network: 
+  // network: {
   // website: "https://starkguardians.com",
   // github: "https://github.com/StarkGuardians",
   // twitter: "https://twitter.com/StarkGuardians",
   // medium: "",
   // discord: "https://discord.gg/starkguardians",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: false,
   // },
@@ -4673,13 +4960,15 @@ export const allProjects: Array<Project> = [
   // description: "A Flask wrapper of Starknet state. Similar in purpose to Ganache. Aims to mimic Starknet's Alpha testnet, but with simplified functionality.",
   // tags: ["tools"],
   // image: "https://user-images.githubusercontent.com/2848732/193076972-da6fa36e-11f7-4cb3-aa29-673224f8576d.png",
-  // network: 
+  // network: {
   // website: "",
   // github: "https://github.com/Shard-Labs/starknet-devnet",
   // twitter: "https://twitter.com/shard_labs",
   // medium: "",
   // discord: "https://discordapp.com/channels/793094838509764618/985824027950055434",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -4690,13 +4979,15 @@ export const allProjects: Array<Project> = [
   // description: "Starksharp is a robust C# toolkit designed to seamlessly integrate C# based applications with Starknet",
   // tags: ["gamefi", "tools"],
   // image: "starksharp.jpg",
-  // network: 
+  // network: {
   // website: "",
   // github: "https://github.com/project3fusion/StarkSharp",
   // twitter: "https://twitter.com/starksharpsdk",
   // medium: "",
   // discord: "",
-  // telegram: "https://t.me/starksharp",,
+  // telegram: "https://t.me/starksharp",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -4707,13 +4998,15 @@ export const allProjects: Array<Project> = [
   // description: "A PHP package for interacting with Starknet",
   // tags: ["tools"],
   // image: "",
-  // network: 
+  // network: {
   // website: "",
   // github: "https://github.com/Starknet-php/starknet.php",
   // twitter: "",
   // medium: "",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -4724,13 +5017,15 @@ export const allProjects: Array<Project> = [
   // description: "Multi-signature functionality for Starknet",
   // tags: ["infrastructure", "governance"],
   // image: "",
-  // network: 
+  // network: {
   // website: "",
   // github: "https://github.com/eqlabs/starknet-multisig",
   // twitter: "https://twitter.com/equilibrium_co",
   // medium: "",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // },
@@ -4741,13 +5036,15 @@ export const allProjects: Array<Project> = [
   // description: "Stork is an oracle network for StarkEx and Starknet, optimized for DeFi and providing low latency off-chain price quotes from trusted sources.",
   // tags: ["defi"],
   // image: "stork.png",
-  // network: 
+  // network: {
   // website: "https://stork.network",
   // github: "",
   // twitter: "",
   // medium: "https://medium.com/@stork-oracle",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // },
@@ -4758,13 +5055,15 @@ export const allProjects: Array<Project> = [
   // description: "Giant robot NFT racing and engineering on Starknet and UE5.Deep Strategy and Drama Game.",
   // tags: ["gamefi"],
   // image: "redline.jpeg",
-  // network: 
+  // network: {
   // website: "http://redline.game/",
   // github: "",
   // twitter: "https://twitter.com/PlayRedline",
   // medium: "",
   // discord: "https://discord.com/invite/UKmSwPrKjw",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // isHidden: true,
@@ -4776,13 +5075,15 @@ export const allProjects: Array<Project> = [
   // description: "zKasino is a decentralized casino built on Layer 2 ZK-Rollups technology.",
   // tags: ["gamefi"],
   // image: "zkasino.png",
-  // network: 
+  // network: {
   // website: "https://zkasino.io/",
   // github: "",
   // twitter: "https://twitter.com/ZKasino_io",
   // medium: "https://zkasino.medium.com/",
   // discord: "https://discord.com/invite/zkasino",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // },
@@ -4793,13 +5094,15 @@ export const allProjects: Array<Project> = [
   // description: "A spreadsheet interface to read, write and execute anything on-chain.",
   // tags: ["nft", "defi", "tools"],
   // image: "starksheet.png",
-  // network: 
+  // network: {
   // website: "https://www.starksheet.xyz",
   // github: "",
   // twitter: "https://twitter.com/starksheet",
   // medium: "",
   // discord: "https://discord.gg/Aab6qdWb5k",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -4810,13 +5113,15 @@ export const allProjects: Array<Project> = [
   // description: "MES Protocol is an orderbook-based DEX built on zkRollups. Hybrid liquidity mechanism is adopted to guarantee the best trading experience and LPs' rewards.",
   // tags: ["defi"],
   // image: "mesprotocol.png",
-  // network: 
+  // network: {
   // website: "https://mesprotocol.com",
   // github: "",
   // twitter: "https://twitter.com/mesprotocol",
   // medium: "https://medium.com/@mesprotocol",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // },
@@ -4827,13 +5132,15 @@ export const allProjects: Array<Project> = [
   // description: "A decentralized knowledge sharing platform for web3 developers. Ask questions and find answers for the Cairo programming language, Starknet, and more.",
   // tags: ["tools"],
   // image: "triality.png",
-  // network: 
+  // network: {
   // website: "https://triality.org",
   // github: "",
   // twitter: "https://twitter.com/trialityorg",
   // medium: "",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: false,
   // },
@@ -4844,13 +5151,15 @@ export const allProjects: Array<Project> = [
   // description: "Exothium is a community driven by blockchain technology that collaborates, incubates and produces open-source games.",
   // tags: ["gamefi"],
   // image: "exothium.png",
-  // network: 
+  // network: {
   // website: "https://exothium.com/",
   // github: "https://github.com/exothium",
   // twitter: "https://twitter.com/Exothium",
   // medium: "",
   // discord: "https://discord.com/invite/yhNrcBmBgA",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // },
@@ -4861,13 +5170,15 @@ export const allProjects: Array<Project> = [
   // description: "Swap becomes easy with next generation AMM on Starknet.",
   // tags: ["defi"],
   // image: "zohal.png",
-  // network: 
+  // network: {
   // website: "",
   // github: "",
   // twitter: "https://twitter.com/zohal_starknet",
   // medium: "https://medium.com/@zohal.starknet",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // },
@@ -4878,13 +5189,15 @@ export const allProjects: Array<Project> = [
   // description: "Reliable, self custodial and high performance liquidity network for traders, institutions and exchanges.",
   // tags: ["defi", "infrastructure"],
   // image: "tanx.png",
-  // network: 
+  // network: {
   // website: "https://tanx.fi/",
   // github: "",
   // twitter: "https://twitter.com/tanXfinance",
   // medium: "",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: true,
   // },
@@ -4895,13 +5208,15 @@ export const allProjects: Array<Project> = [
   // description: "Find all the latest Starknet data that you are looking for.",
   // tags: ["tools"],
   // image: "",
-  // network: 
+  // network: {
   // website: "https://www.starkboard.io/",
   // github: "",
   // twitter: "https://twitter.com/starkboard",
   // medium: "https://medium.com/@starkboard",
   // discord: "https://discord.com/invite/starkboard",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: true,
   // },
@@ -4912,13 +5227,15 @@ export const allProjects: Array<Project> = [
   // description: "On-chain world builder RTS built on Starknet where you harvest resources and build to create your dream community.",
   // tags: ["nft", "gamefi"],
   // image: "FrensLands.png",
-  // network: 
+  // network: {
   // website: "https://frenslands.xyz",
   // github: "",
   // twitter: "https://twitter.com/FrensLands",
   // medium: "",
   // discord: "https://discord.gg/gehYZU9Trf",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // },
@@ -4929,13 +5246,15 @@ export const allProjects: Array<Project> = [
   // description: "Early Starkers project aims to gather the early adaptors and pioneers of Starknet community.",
   // tags: ["nft"],
   // image: "early_starkers.png",
-  // network: 
+  // network: {
   // website: "https://earlystarkers.io",
   // github: "",
   // twitter: "https://twitter.com/earlystarkers",
   // medium: "",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: false,
   // },
@@ -4946,13 +5265,15 @@ export const allProjects: Array<Project> = [
   // description: "BlastApi offers high quality Starknet mainnet and testnet APIs.",
   // tags: ["infrastructure"],
   // image: "blastapi.png",
-  // network: 
+  // network: {
   // website: "https://blastapi.io/",
   // github: "https://github.com/bwarelabs",
   // twitter: "https://twitter.com/BlastAPI",
   // medium: "https://medium.com/bware-labs",
   // discord: "https://discord.gg/bwarelabs",
-  // telegram: "https://t.me/bwareLabs",,
+  // telegram: "https://t.me/bwareLabs",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // },
@@ -4963,13 +5284,15 @@ export const allProjects: Array<Project> = [
   // description: "10KSwap is a Layer 2 AMM protocol building on Starknet",
   // tags: ["defi", "infrastructure"],
   // image: "10kswap.png",
-  // network: 
+  // network: {
   // website: "https://10kswap.com",
   // github: "https://github.com/10k-swap",
   // twitter: "https://twitter.com/10KSwap",
   // medium: "",
   // discord: "https://discord.gg/T77yphUPB6",
-  // telegram: "https://t.me/Elena10KSwap",,
+  // telegram: "https://t.me/Elena10KSwap",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -4980,13 +5303,15 @@ export const allProjects: Array<Project> = [
   // description: "Token-gate your Discord channels with Starknet assets",
   // tags: ["tools", "infrastructure"],
   // image: "starky.jpeg",
-  // network: 
+  // network: {
   // website: "https://starky.wtf/",
   // github: "https://github.com/nmalzieu/starky",
   // twitter: "https://twitter.com/starky_wtf",
   // medium: "https://starkywtf.notion.site/Starky-wtf-f2f918be668b4e96863e82c0791e317c",
   // discord: "",
-  // telegram: "https://t.me/+Mi34Im1Uafc1Y2Q8",,
+  // telegram: "https://t.me/+Mi34Im1Uafc1Y2Q8",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -4997,13 +5322,15 @@ export const allProjects: Array<Project> = [
   // description: "Perpetuals. Order book liquidity. A full crypto derivatives suite. Built atop Ethereum ZK rollups. No fees. Maximum security. Maximum leverage. DeFi, evolved.",
   // tags: ["defi"],
   // image: "rabbitx.png",
-  // network: 
+  // network: {
   // website: "https://rabbitx.io/?utm_source=starknet&utm_medium=organic&utm_campaign=ecosystem",
   // github: "https://github.com/rabbitx-docs/apidocs",
   // twitter: "https://twitter.com/rabbitx_io",
   // medium: "https://blog.rabbitx.io",
   // discord: "https://discord.gg/rabbitx",
-  // telegram: "https://t.me/RabbitX_Official",,
+  // telegram: "https://t.me/RabbitX_Official",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // },
@@ -5014,13 +5341,15 @@ export const allProjects: Array<Project> = [
   // description: "Stablecoin Lending and Margin Trading Protocol designed specifically for Liquidity Providers across EVMs and Starknet.",
   // tags: ["defi", "dao", "governance"],
   // image: "cygnusdao.png",
-  // network: 
+  // network: {
   // website: "https://cygnusdao.finance",
   // github: "https://github.com/cygnusdao",
   // twitter: "https://twitter.com/CygnusDAO",
   // medium: "https://cygnusdao.medium.com/",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // },
@@ -5031,13 +5360,15 @@ export const allProjects: Array<Project> = [
   // description: "RYG.Labs is a project that focuses on building and developing utilities of NFT; we also provide blockchain application solutions for individual users and businesses. Hence, heighten the blue-chip NFTs liquidity and create the playground for NFT DAOs are also our objectives.",
   // tags: ["nft", "dao"],
   // image: "ryg-labs.jpg",
-  // network: 
+  // network: {
   // website: "https://www.itsryg.com/",
   // github: "https://github.com/RYG-Labs",
   // twitter: "https://twitter.com/RYG_Labs",
   // medium: "",
   // discord: "https://discord.gg/rEVCAYjq",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // },
@@ -5048,13 +5379,15 @@ export const allProjects: Array<Project> = [
   // description: "VSCode extension to visualize Starknet contracts: view storage variables, external and view functions, and events.",
   // tags: ["tools", "security"],
   // image: "",
-  // network: 
+  // network: {
   // website: "https://marketplace.visualstudio.com/items?itemName=trailofbits.starknet-explorer",
   // github: "https://github.com/crytic/vscode-starknet-explorer",
   // twitter: "",
   // medium: "",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -5065,13 +5398,15 @@ export const allProjects: Array<Project> = [
   // description: "Building a new NFT bridge protocol that will empower the NFT licensing, utility & derivative between Ethereum and other L1/L2.",
   // tags: ["nft", "bridge", "infrastructure"],
   // image: "comoco.jpg",
-  // network: 
+  // network: {
   // website: "https://comoco.xyz/",
   // github: "https://github.com/comoco-labs",
   // twitter: "https://twitter.com/comocolabs",
   // medium: "",
   // discord: "https://discord.gg/comoco",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -5082,13 +5417,15 @@ export const allProjects: Array<Project> = [
   // description: "Gamified Mindfulness app on Starknet",
   // tags: ["nft", "gamefi"],
   // image: "monkeymind.png",
-  // network: 
+  // network: {
   // website: "",
   // github: "",
   // twitter: "https://twitter.com/0xMonkeyMind",
   // medium: "",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // isHidden: true,
@@ -5100,13 +5437,15 @@ export const allProjects: Array<Project> = [
   // description: "AMM with strategies, limit orders and other powerful LP features",
   // tags: ["defi"],
   // image: "haiko.png",
-  // network: 
+  // network: {
   // website: "http://haiko.xyz/",
   // github: "https://github.com/haiko-xyz",
   // twitter: "https://twitter.com/haikoxyz",
   // medium: "https://haikoxyz.medium.com",
   // discord: "https://discord.gg/haiko-xyz",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -5117,13 +5456,15 @@ export const allProjects: Array<Project> = [
   // description: "A formal verification tool for StarkNet smart contracts.",
   // tags: ["tools", "security", "formal-verification"],
   // image: "horus.png",
-  // network: 
+  // network: {
   // website: "https://nethermind.io/horus/",
   // github: "https://github.com/NethermindEth/horus-checker",
   // twitter: "",
   // medium: "",
   // discord: "https://discord.gg/FhgPG6cEvH",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -5134,10 +5475,12 @@ export const allProjects: Array<Project> = [
   // description: "Inspired in Solidity security challenges, this is a game in which you hack Starknet Testnet smart contracts to learn about security. It's meant to be both fun and educational. The game consists of a series of challenges in different categories. You earn points for every challenge you complete.",
   // tags: ["security"],
   // image: "scf.png",
-  // network: 
+  // network: {
   // website: "https://starknet-challenges.vercel.app/",
   // github: "https://github.com/devnet0x/Starknet-Security-Challenges-Repo",
-  // medium: "https://medium.com/@devnet0x",,
+  // medium: "https://medium.com/@devnet0x",
+  // },
+
   // isLive: false,
   // isTestnetLive: true,
   // },
@@ -5148,13 +5491,15 @@ export const allProjects: Array<Project> = [
   // description: "Checkpoint is a library for indexing data from Starknet events and making it accessible through GraphQL.",
   // tags: ["tools", "infrastructure"],
   // image: "checkpoint.png",
-  // network: 
+  // network: {
   // website: "https://checkpoint.fyi/",
   // github: "https://github.com/snapshot-labs/checkpoint",
   // twitter: "https://twitter.com/checkpointfyi",
   // medium: "",
   // discord: "https://discord.gg/QJupGWJbge",
-  // telegram: "https://t.me/checkpointfyi",,
+  // telegram: "https://t.me/checkpointfyi",
+  // },
+
   // isLive: true,
   // isTestnetLive: false,
   // },
@@ -5165,13 +5510,15 @@ export const allProjects: Array<Project> = [
   // description: "Institutional-grade blockchain nodes so you can build, scale and stake with ease.",
   // tags: ["access node", "data", "staking", "infrastructure"],
   // image: "rockx-logo.png",
-  // network: 
+  // network: {
   // website: "https://www.rockx.com/",
   // github: "https://github.com/RockX-SG",
   // twitter: "https://twitter.com/rockx_official",
   // medium: "",
   // discord: "https://discord.gg/e7WSJmCrNZ",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: false,
   // },
@@ -5182,13 +5529,15 @@ export const allProjects: Array<Project> = [
   // description: "Beerus is a trustless Starknet Light Client, ⚡ blazing fast ⚡ and powered by Rust 🦀",
   // tags: ["all", "security", "infrastructure"],
   // image: "beerus.png",
-  // network: 
+  // network: {
   // website: "https://github.com/keep-starknet-strange/beerus",
   // github: "https://github.com/keep-starknet-strange/beerus",
   // twitter: "https://twitter.com/BeerusStarknet",
   // medium: "",
   // discord: "",
-  // telegram: "https://t.me/BeerusStarknet",,
+  // telegram: "https://t.me/BeerusStarknet",
+  // },
+
   // isLive: true,
   // isTestnetLive: false,
   // },
@@ -5199,13 +5548,15 @@ export const allProjects: Array<Project> = [
   // description: "Accomplish quests to collect unique NFTs on Starknet.",
   // tags: ["all", "digital_id", "nft"],
   // image: "starknetquestLogo.svg",
-  // network: 
+  // network: {
   // website: "starknet.quest",
   // github: "https://starknet.quest/",
   // twitter: "https://twitter.com/Starknet_quest",
   // medium: "",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -5216,13 +5567,15 @@ export const allProjects: Array<Project> = [
   // description: "On-chain dark pool. Trade any ERC-20 in size with zero price impact.",
   // tags: ["all", "defi"],
   // image: "renegade.png",
-  // network: 
+  // network: {
   // website: "https://renegade.fi",
   // github: "https://github.com/renegade-fi",
   // twitter: "https://twitter.com/renegade_fi",
   // medium: "",
   // discord: "https://discord.gg/renegade-fi",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // },
@@ -5231,21 +5584,17 @@ export const allProjects: Array<Project> = [
   // name: "Expectium Protocol",
   // shortName: "Expectium",
   // description: "Expectium is an information markets platform that lets you trade on the world’s most highly-debated topics (e.g. politics, current events, etc). On Expectium, you build a portfolio based on your forecasts and earn a return if you are right. When you decide to buy shares in a market, you are weighing in with your own knowledge, research, and view of the future. Market prices reflect what traders think are the odds of future events, turning trading activity into actionable insights that help people make better decisions. As a result, Expectium is a leading source of unbiased and real-time data about future events.",
-  // tags: [
-  // "all",
-  // "dao",
-  // "defi",
-  // "nft",
-  // "gamefi",
-  // ],
+  // tags: ["all", "dao", "defi", "nft", "gamefi"],
   // image: "expectium.png",
-  // network: 
+  // network: {
   // website: "https://expectium.io/",
   // github: "",
   // twitter: "https://twitter.com/expectiumio",
   // medium: "",
   // discord: "https://discord.com/invite/TU54zXjNuq",
-  // telegram: "https://t.me/expectiumprotocol",,
+  // telegram: "https://t.me/expectiumprotocol",
+  // },
+
   // isLive: false,
   // isTestnetLive: true,
   // },
@@ -5254,17 +5603,13 @@ export const allProjects: Array<Project> = [
   // name: "flipblob",
   // shortName: "flipblob",
   // description: "FlipBlob is a Starknet-based (dApp) that provides a secure and transparent platform for coin-flipping. Win, and you'll receive double your stake.",
-  // tags: [
-  // "gamefi",
-  // "defi",
-  // "cairo",
-  // "all",
-  // "nft",
-  // ],
+  // tags: ["gamefi", "defi", "cairo", "all", "nft"],
   // image: "disperse-starknet-logo.png",
-  // network: 
+  // network: {
   // website: "https://flipblob.com/",
-  // twitter: "https://twitter.com/flipblob",,
+  // twitter: "https://twitter.com/flipblob",
+  // },
+
   // isLive: false,
   // isTestnetLive: true,
   // },
@@ -5275,12 +5620,14 @@ export const allProjects: Array<Project> = [
   // description: "Welcome to OnchainBlock - the destination to delve deeper into the realm of Starknet, and various other asset types based on blockchain technology.",
   // tags: ["bridge", "tools"],
   // image: "OnchainBlock.png",
-  // network: 
+  // network: {
   // website: "https://onchainblock.xyz/",
   // github: "https://github.com/OnchainBlock",
   // twitter: "https://twitter.com/OnchainBlock",
   // medium: "https://medium.com/@onchainblock",
-  // telegram: "https://t.me/trackerETH",,
+  // telegram: "https://t.me/trackerETH",
+  // },
+
   // isLive: true,
   // isTestnetLive: false,
   // },
@@ -5291,11 +5638,13 @@ export const allProjects: Array<Project> = [
   // description: "D'islands is an on-chain gaming ecosystem built on Starknet. D'islands aims to create a truly decentralized, scalable and autonomous world where players can enjoy unlimited games and interact with each other without any limitations.",
   // tags: ["nft", "gamefi"],
   // image: "Disland-logo.jpg",
-  // network: 
+  // network: {
   // website: "https://www.dislands.com/",
   // twitter: "https://twitter.com/0xDislands",
   // medium: "https://medium.com/@dislands",
-  // discord: "https://discord.com/invite/G6ds4SZBvf",,
+  // discord: "https://discord.com/invite/G6ds4SZBvf",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // },
@@ -5306,13 +5655,15 @@ export const allProjects: Array<Project> = [
   // description: "9000 generative on-chain dungeons in the Lootverse. Can be used by designers and developers for text-based, 2D, and 3D games.",
   // tags: ["gamefi", "nft"],
   // image: "cryptsandcaverns.png",
-  // network: 
+  // network: {
   // website: "https://threepwave.com/cryptsandcaverns",
   // github: "https://github.com/CheDAOLabs/cryptsandcaverns",
   // twitter: "https://twitter.com/cryptsncaverns",
   // medium: "",
   // discord: "https://discord.com/invite/vXX84QjR7F",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: true,
   // },
@@ -5323,13 +5674,15 @@ export const allProjects: Array<Project> = [
   // description: "Blast is a decentralized API platform with best in class response times and availability. It leverages the power of hundreds of node providers and advanced routing algorithms for unmatched service quality!",
   // tags: ["tools", "infrastructure"],
   // image: "blast.png",
-  // network: 
+  // network: {
   // website: "https://blastapi.io/",
   // github: "https://github.com/bwarelabs",
   // twitter: "https://twitter.com/BlastAPI",
   // medium: "https://bware.page.link/medium",
   // discord: "https://discord.gg/bwarelabs",
-  // telegram: "https://t.me/BwareLabsAnnouncements",,
+  // telegram: "https://t.me/BwareLabsAnnouncements",
+  // },
+
   // isLive: true,
   // isTestnetLive: false,
   // },
@@ -5340,13 +5693,15 @@ export const allProjects: Array<Project> = [
   // description: "🛒 The 1st Dynamic Marketplace for Starknet - By community for the community. Building the Big Picture, Not Just MARKET.",
   // tags: ["nft", "infrastructure"],
   // image: "flex.png",
-  // network: 
+  // network: {
   // website: "https://hyperflex.market/",
   // github: "https://github.com/0xandee/flex-marketplace-cairo0-contracts",
   // twitter: "https://twitter.com/Flex_strk",
   // medium: "",
   // discord: "https://discord.com/invite/6HvG4ckx9T",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: false,
   // },
@@ -5357,13 +5712,15 @@ export const allProjects: Array<Project> = [
   // description: "The ticketing platform that operates on Starknet.",
   // tags: ["nft", "infrastructure"],
   // image: "starkpass.png",
-  // network: 
+  // network: {
   // website: "https://starkpass.com",
   // github: "",
   // twitter: "https://twitter.com/door_labs",
   // medium: "",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: false,
   // isTestnetLive: true,
   // },
@@ -5374,13 +5731,15 @@ export const allProjects: Array<Project> = [
   // description: "Decentralised, Non-Custodial, Peer-to-Peer payment infrastructure",
   // tags: ["defi", "payments", "infrastructure", "tools"],
   // image: "Resmic.png",
-  // network: 
+  // network: {
   // website: "https://resmic.com",
   // github: "https://github.com/0xResmic",
   // twitter: "https://twitter.com/0xResmic",
   // medium: "",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -5391,13 +5750,15 @@ export const allProjects: Array<Project> = [
   // description: "StarkRekt enables users to check and reset their token spending permissions on StarkNet",
   // tags: ["tools", "security"],
   // image: "starkrekt-logo.png",
-  // network: 
+  // network: {
   // website: "https://starkrekt.com/",
   // github: "",
   // twitter: "https://twitter.com/StarkRekt",
   // medium: "",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: false,
   // },
@@ -5408,13 +5769,15 @@ export const allProjects: Array<Project> = [
   // description: "CheDAO is a Web3 autonomous organization formed by a group of rebellious game lovers. Inspired by the spirit of Che Guevara, our mission is to liberate the productive forces of gaming. Our vision is to establish an eternal, onchain autonomous world.CheDAO also is the parent company of @AW_Research & @cryptsncaverns",
   // tags: ["dao", "gamefi", "nft", "tools"],
   // image: "chedao.png",
-  // network: 
+  // network: {
   // website: "https://www.chedao.io/",
   // github: "https://github.com/CheDAOLabs",
   // twitter: "https://twitter.com/CheDAOLabs",
   // medium: "",
   // discord: "https://discord.gg/XWGSNJ7vv5",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -5425,13 +5788,15 @@ export const allProjects: Array<Project> = [
   // description: "AW Research is an institution dedicated to Autonomous Worlds research, powered by CheDAO.",
   // tags: ["dao", "governance"],
   // image: "awResearch.png",
-  // network: 
+  // network: {
   // website: "https://www.chedao.io/",
   // github: "",
   // twitter: "https://twitter.com/AW_Research",
   // medium: "https://mirror.xyz/0x8046108b92EEAa28b8970B6294BfD432dc382c7D",
   // discord: "https://discord.gg/XWGSNJ7vv5",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -5442,13 +5807,15 @@ export const allProjects: Array<Project> = [
   // description: "Bountive is a Decentralized no-loss prize savings protocol on Starknet",
   // tags: ["defi"],
   // image: "bountive.png",
-  // network: 
+  // network: {
   // website: "https://www.bountive.fi/",
   // github: "",
   // twitter: "https://twitter.com/Bountive",
   // medium: "https://medium.com/@bountive",
   // discord: "https://discord.com/invite/ZxmMwektnx",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: false,
   // },
@@ -5459,13 +5826,15 @@ export const allProjects: Array<Project> = [
   // description: "Play BattleBoosters, a Fantasy MMA web3 game. Collect, trade, and compete with NFTs for prizes. Immerse yourself in the strategic world of MMA card gaming.",
   // tags: ["gamefi", "nft"],
   // image: "battleboosters.png",
-  // network: 
+  // network: {
   // website: "https://battleboosters.com",
   // github: "https://github.com/BattleBoosters",
   // twitter: "https://twitter.com/battleboosters",
   // medium: "https://medium.com/@battleboosters",
   // discord: "https://github.com/BattleBoosters",
-  // telegram: "https://t.me/BattleBoosters",,
+  // telegram: "https://t.me/BattleBoosters",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // },
@@ -5476,13 +5845,15 @@ export const allProjects: Array<Project> = [
   // description: "Distributed multi-chain acceleration layer solving the RPC requests congestion problem with infinite scalability.",
   // tags: ["infrastructure"],
   // image: "blockpi.png",
-  // network: 
+  // network: {
   // website: "https://blockpi.io/",
   // github: "https://github.com/BlockPILabs",
   // twitter: "https://twitter.com/RealBlockPI",
   // medium: "https://medium.com/@blockpi",
   // discord: "https://discord.com/invite/xTvGVrGVZv",
-  // telegram: "https://t.me/blockpidaily",,
+  // telegram: "https://t.me/blockpidaily",
+  // },
+
   // isLive: true,
   // isTestnetLive: false,
   // isHidden: true,
@@ -5494,13 +5865,15 @@ export const allProjects: Array<Project> = [
   // description: "Starkpunks launched as the first 10k NFTs collection on StarkNet in 2022",
   // tags: ["nft"],
   // image: "starkpunkslogo.png",
-  // network: 
+  // network: {
   // website: "https://www.starkpunks.com",
   // github: "",
   // twitter: "https://twitter.com/starkpunks_nft",
   // medium: "",
   // discord: "https://discord.com/invite/n9hdZ4Smva",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: false,
   // },
@@ -5509,21 +5882,17 @@ export const allProjects: Array<Project> = [
   // name: "Nomis Protocol",
   // shortName: "Nomis",
   // description: "Nomis represents the Reputation Layer for web3, specifically designed to empower users to access and leverage their wallet history. It serves as a valuable tool for BUIDLers, enabling accelerated growth through active engagement and incentives for genuine contributors and early adopters.",
-  // tags: [
-  // "all",
-  // "digital_id",
-  // "tools",
-  // "infrastructure",
-  // "security",
-  // ],
+  // tags: ["all", "digital_id", "tools", "infrastructure", "security"],
   // image: "nomis.png",
-  // network: 
+  // network: {
   // website: "https://nomis.cc",
   // github: "https://github.com/Nomis-cc",
   // twitter: "https://twitter.com/0xNomis",
   // medium: "https://medium.com/@0xNomis",
   // discord: "https://discord.gg/0xnomis",
-  // telegram: "https://t.me/nomis_protocol",,
+  // telegram: "https://t.me/nomis_protocol",
+  // },
+
   // isLive: true,
   // isTestnetLive: false,
   // },
@@ -5534,13 +5903,15 @@ export const allProjects: Array<Project> = [
   // description: "The one tool you need to stay up to date and interact with crypto using easily customizable dashboards.",
   // tags: ["tools"],
   // image: "Alphaday.png",
-  // network: 
+  // network: {
   // website: "https://app.alphaday.com/b/starknet/",
   // github: "https://github.com/AlphadayHQ",
   // twitter: "https://twitter.com/AlphadayHQ",
   // medium: "",
   // discord: "https://discord.com/invite/8KSmPyT5k8",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -5551,13 +5922,15 @@ export const allProjects: Array<Project> = [
   // description: "Crosschain Infrastructure for Digital Assets Exchange. Unleash potential with our key offerings: Starknet NFT API, Open Orderbook, Starknet NFT Indexer, and Marketplace API. Empowering creators and uniting markets for mass adoption.",
   // tags: ["tools", "infrastructure", "nft"],
   // image: "arkproject.svg",
-  // network: 
+  // network: {
   // website: "https://arkproject.dev",
   // github: "https://github.com/ArkProjectNFTs",
   // twitter: "https://twitter.com/ArkProjectNFTs",
   // medium: "",
   // discord: "https://discord.gg/TdbNwnDrSh",
-  // telegram: "https://t.me/arkprojectnfts",,
+  // telegram: "https://t.me/arkprojectnfts",
+  // },
+
   // isLive: false,
   // isTestnetLive: true,
   // },
@@ -5568,13 +5941,15 @@ export const allProjects: Array<Project> = [
   // description: "Starknet gas price tracker, provide all the info about the current gas price on Starknet&Ethereum you need.",
   // tags: ["tools"],
   // image: "starknetGasPriceTracker.png",
-  // network: 
+  // network: {
   // website: "https://app.onlydust.com/p/starknet-gas-price-browser-extension",
   // github: "https://github.com/cryptonerdcn/Starknet-gas-price-browser-extension",
   // twitter: "https://twitter.com/cryptonerdcn",
   // medium: "",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: false,
   // },
@@ -5585,13 +5960,15 @@ export const allProjects: Array<Project> = [
   // description: "Ventory NFT Marketplace - Multichain NFT Marketplace bringing along one-click NFT liquidity solution. NFT Marketplace Aggregator,NFT Launchpad,  NFT Hybrid Lending.",
   // tags: ["nft", "infrastructure", "gamefi", "mobile"],
   // image: "ventory.jpg",
-  // network: 
+  // network: {
   // website: "https://ventory.gg/",
   // github: "https://github.com/ventorymarket",
   // twitter: "https://twitter.com/Ventory_gg",
   // medium: "",
   // discord: "https://discord.com/invite/W6aCg9sU3e",
-  // telegram: "https://t.me/ventorychannel",,
+  // telegram: "https://t.me/ventorychannel",
+  // },
+
   // isLive: true,
   // isTestnetLive: false,
   // },
@@ -5602,13 +5979,15 @@ export const allProjects: Array<Project> = [
   // description: "OKcontract replaces monolithic frontends with a new Interaction Layer to simplify client-side interaction implementation, reduce maintenance and security vulnerabilities. Using OKcontract, developers can specify contract interactions in concise formats, generate embeddable UIs for smart contracts, and benefit from the OKcontract decentralized runtime engine that automatically operates interactions on the client-side.",
   // tags: ["infrastructure", "tools"],
   // image: "okcontract.png",
-  // network: 
+  // network: {
   // website: "https://www.okcontract.com/",
   // github: "https://github.com/okcontract",
   // twitter: "https://twitter.com/okcontract",
   // medium: "https://medium.com/@okcontract",
   // discord: "https://discord.gg/Ns45RTUXka",
-  // telegram: "https://t.me/+OHw-D8OA28VjNDc1",,
+  // telegram: "https://t.me/+OHw-D8OA28VjNDc1",
+  // },
+
   // isLive: false,
   // isTestnetLive: false,
   // },
@@ -5619,10 +5998,12 @@ export const allProjects: Array<Project> = [
   // description: "CairoSwap is an innovative decentralized exchange protocol focused on delivering optimal trading experiences.\n\nOur goal is to establish a robust Liquidity Infrastructure that empowers traders and decentralized applications (dApps) alike. We are committed to providing our users with the most competitive prices and access to a wide range of assets. Our mission is to redefine industry standards by offering an exceptional user experience.\n",
   // tags: ["defi", "infrastructure", "tools"],
   // image: "cairoswap.svg",
-  // network: 
+  // network: {
   // website: "https://cairoswap.com",
   // github: "https://github.com/orgs/DevPioneers",
-  // twitter: "https://twitter.com/cairoswap",,
+  // twitter: "https://twitter.com/cairoswap",
+  // },
+
   // isLive: true,
   // isTestnetLive: false,
   // },
@@ -5633,13 +6014,15 @@ export const allProjects: Array<Project> = [
   // description: "Dragark is a Starknet-native fully on-chain game set in the fantastic Sky Kingdom, where players can take their Dragarks on a journey to explore, conquer, exploit, expand their sky territories, and craft & trade the in-game assets within a dynamic economy.",
   // tags: ["nft", "gamefi"],
   // image: "dragark.png",
-  // network: 
+  // network: {
   // website: "https://dragark.net/",
   // github: "https://github.com/DragarkTeam",
   // twitter: "https://twitter.com/playDRAGARK",
   // medium: "",
   // discord: "https://discord.gg/KEChMrdk7z",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: false,
   // },
@@ -5650,13 +6033,15 @@ export const allProjects: Array<Project> = [
   // description: "MusicDex is a revolutionary crowd investment platform which allows you to support artists, earn passive income, and be part of the future of music",
   // tags: ["defi"],
   // image: "musicdex.jpg",
-  // network: 
+  // network: {
   // website: "https://musicdex.co/",
   // github: "",
   // twitter: "https://x.com/MusicDex_inc",
   // medium: "",
   // discord: "",
-  // telegram: "https://t.me/musicdexplatform",,
+  // telegram: "https://t.me/musicdexplatform",
+  // },
+
   // isLive: true,
   // isTestnetLive: false,
   // },
@@ -5667,10 +6052,12 @@ export const allProjects: Array<Project> = [
   // description: "Staking Rewards offers an official Starknet staking interface, allowing users to stake STRK using their preferred Starknet wallet. Users can stake directly with any validator or opt for liquid staking through Endu.fi or Nimbora. Once staked, they can easily manage their position, claim rewards, switch validators, or unstake. Users can also gain insights into the Starknet staking ecosystem via their STRK staking dashboard. Explore all Starknet validators and liquid staking protocols, by comparing key metrics such as total AuM, fees, and Net Staking Flows. Or use the STRK staking calculator to estimate potential staking rewards over time.",
   // tags: ["tools", "defi"],
   // image: "staking-rewards.svg",
-  // network: 
+  // network: {
   // website: "https://www.stakingrewards.com/",
   // twitter: "https://x.com/StakingRewards",
-  // discord: "http://discord.gg/44nxDZ2SEe",,
+  // discord: "http://discord.gg/44nxDZ2SEe",
+  // },
+
   // isLive: true,
   // isTestnetLive: false,
   // },
@@ -5681,11 +6068,13 @@ export const allProjects: Array<Project> = [
   // description: "Starknet Deploy is a tool to streamline the deployment and interaction of Starknet contracts.",
   // tags: ["tools"],
   // image: "",
-  // network: 
+  // network: {
   // website: "",
   // twitter: "",
   // discord: "",
-  // github: "https://github.com/olas-protocol/starknet-deploy",,
+  // github: "https://github.com/olas-protocol/starknet-deploy",
+  // },
+
   // isLive: true,
   // isTestnetLive: false,
   // },
@@ -5696,11 +6085,13 @@ export const allProjects: Array<Project> = [
   // description: "Trivex is the ultimate DApp for perpetual trading & strategy analysis.",
   // tags: ["defi", "tools"],
   // image: "Trivex.png",
-  // network: 
+  // network: {
   // website: "https://official-trivex.xyz/",
   // twitter: "https://x.com/trivex_xyz",
   // discord: "https://discord.com/invite/EQGmqBkBfj",
-  // github: "https://github.com/JY20/trivex_web",,
+  // github: "https://github.com/JY20/trivex_web",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -5711,13 +6102,15 @@ export const allProjects: Array<Project> = [
   // description: "oxLand is a roguelike dungeon crawler game built on StarkNet. Explore dungeons, defeat bosses, and earn rewards while connecting to the StarkNet ecosystem. Playable on web, support for both PC and mobile.",
   // tags: ["gamefi", "defi", "nft", "mobile"],
   // image: "oxland.png",
-  // network: 
+  // network: {
   // website: "https://www.oxland.site",
   // github: "",
   // twitter: "https://x.com/oxLand_bot",
   // medium: "",
   // discord: "",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: false,
   // },
@@ -5728,13 +6121,15 @@ export const allProjects: Array<Project> = [
   // description: "Kapan Finance is a DeFi protocol that allows users to perform advanced lending operations on underlying protocols in a complete non-custodial manner. Swap collateral and debt, refinance between protocols and close with collateral.",
   // tags: ["defi", "tools", "infrastructure"],
   // image: "kapan.png",
-  // network: 
+  // network: {
   // website: "https://www.kapan.finance/",
   // github: "https://github.com/stefaniliev545/kapan",
   // twitter: "https://x.com/KapanFinance",
   // medium: "",
   // discord: "https://discord.com/invite/Vjk6NhkxGv",
-  // telegram: "",,
+  // telegram: "",
+  // },
+
   // isLive: true,
   // isTestnetLive: false,
   // },
@@ -5745,10 +6140,12 @@ export const allProjects: Array<Project> = [
   // description: "ZKForge is a complete privacy ecosystem powered by zkSTARK proofs to enable encrypted messaging, privacy-preserving dApps, and confidential transactions through the x402 protocol layer.",
   // tags: ["tools", "infrastructure", "Privacy"],
   // image: "zkforge.png",
-  // network: 
+  // network: {
   // website: "https://www.zkforge.io/",
   // github: "https://github.com/ZKForgeIO",
-  // twitter: "https://x.com/ZKForge_io",,
+  // twitter: "https://x.com/ZKForge_io",
+  // },
+
   // isLive: true,
   // isTestnetLive: true,
   // },
@@ -5757,18 +6154,14 @@ export const allProjects: Array<Project> = [
   // name: "zkTerm",
   // shortName: "ZKTR",
   // description: "A terminal for private blockchain interactions where your transactions stay anonymous, your identity stays protected",
-  // tags: [
-  // "wallet",
-  // "tools",
-  // "infrastructure",
-  // "bridge",
-  // "payments",
-  // ],
+  // tags: ["wallet", "tools", "infrastructure", "bridge", "payments"],
   // image: "zkterm.png",
-  // network: 
+  // network: {
   // website: "https://zkterm.io/",
   // github: "https://github.com/zkterm",
-  // twitter: "https://x.com/zkterm",,
+  // twitter: "https://x.com/zkterm",
+  // },
+
   // isLive: true,
   // isTestnetLive: false,
   // },
