@@ -35,7 +35,7 @@ function BasicContent({
       return (
         <Box
           ref={index === filteredResources.length - 1 ? observe : null}
-          key={`resource-${resource.name}-${index}`}
+          key={`resource-${resource.name}`}
           flex={1}
         >
           <CardResource
@@ -56,13 +56,13 @@ function BasicContent({
   };
 
   const renderLoadingState = () => {
-    return Array(12)
-      .fill(0)
-      .map((_, index) => (
-        <Box key={`resource-skeleton-${index}`} flex={1}>
-          <CardResourceSkeleton />
-        </Box>
-      ));
+    const skeletonIds = Array.from({ length: 12 }, (_, i) => `skeleton-${i}`);
+
+    return skeletonIds.map((id) => (
+      <Box key={id} flex={1}>
+        <CardResourceSkeleton />
+      </Box>
+    ));
   };
 
   return isLoading || (filteredResources && filteredResources.length > 0) ? (
