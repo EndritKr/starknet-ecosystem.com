@@ -28,6 +28,9 @@ const translate: TranslateState = {
     academy_subtitle:
       "Twój sklep edukacyjny Starknet. Znajdź samouczki, przewodniki, wkłady, biblioteki. Subskrybuj biuletyny, aby śledzić ten bardzo szybko rozwijający się ekosystem.",
     jobs_subtitle: "Możesz być o jedno kliknięcie od wymarzonej pracy.",
+    hero_metrics_title: "Aktualne metryki",
+    hero_metrics_description:
+      "Śledź najnowsze transakcje, kontrakty i bloki chroniące ekosystem Starknet.",
     cumulative_chart: "Wykres zbiorczy",
     non_cumulative_chart: "Wykres nieskumulowany",
   },

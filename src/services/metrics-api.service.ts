@@ -84,6 +84,36 @@ const fetchBridgeMetrics = (testnet?: boolean): Promise<BridgeMetrics> =>
       ethValue: result.ethValue,
     }));
 
+// Fetch TVL (Total Value Locked) from Voyager or starknet-db
+const fetchTVL = (): Promise<number | null> =>
+  // Try starknet-db first (most reliable)
+  fetch(`${STARKNET_DB_BASE_URL}/tvl`)
+    .then((response: Response) => {
+      if (!response.ok) throw new Error(response.statusText);
+      return response.json();
+    })
+    .then((data) => {
+      // Support different response formats
+      if (typeof data === 'number') return data;
+      if (data.tvl) return data.tvl;
+      if (data.totalValueLocked) return data.totalValueLocked;
+      if (data.value) return data.value;
+      return null;
+    })
+    .catch((error) => {
+      console.log("Error fetching TVL from starknet-db:", error);
+      // Fallback: try Voyager API (may need adjustment based on actual API)
+      return fetch("https://voyager.online/api/stats")
+        .then((res) => {
+          if (!res.ok) throw new Error(res.statusText);
+          return res.json();
+        })
+        .then((response) => {
+          return response.tvl || response.totalValueLocked || null;
+        })
+        .catch(() => null);
+    });
+
 const fetchTweetCounts = (keyword: string): Promise<TweetCount[]> =>
   fetch(`${STARKNET_DB_BASE_URL}/tweet-counts?keyword=${keyword}`).then(
     (response: Response) => {
@@ -100,4 +130,5 @@ export const MetricsApi = {
   fetchContractCount,
   fetchBridgeMetrics,
   fetchTweetCounts,
+  fetchTVL,
 };

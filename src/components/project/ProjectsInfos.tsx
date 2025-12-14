@@ -1,4 +1,5 @@
-import { Flex, HStack, Text } from "@chakra-ui/layout";
+import { Box, Flex, HStack, Text } from "@chakra-ui/layout";
+import { motion } from "framer-motion";
 import type { FC } from "react";
 import { useEffect, useState } from "react";
 
@@ -9,6 +10,9 @@ import Link from "../layout/Link";
 import NetworkLogos from "../layout/NetworkLogos";
 
 import ProjectsInfosDetails from "./ProjectsInfosDetails";
+
+const MotionBox = motion(Box);
+const MotionFlex = motion(Flex);
 
 interface Props {
   project?: Project;
@@ -22,159 +26,143 @@ const ProjectsInfos: FC<Props> = ({ project }) => {
     setJobCount(allJobs.filter((job) => job.projectId === project?.id).length);
   }, [project]);
 
-  // const renderTechStack = () => {
-  //   return (
-  //     <Flex direction="column">
-  //       <ProjectsInfosDetails
-  //         title="Tech stack"
-  //         value={
-  //           <HStack wrap="wrap" spacing={0}>
-  //             <ImageTooltip
-  //               img={
-  //                 <Image
-  //                   mr={1}
-  //                   src="/tech-logos/next-logo.png"
-  //                   objectFit="fill"
-  //                   height="24px"
-  //                 />
-  //               }
-  //               tooltipText="Nextjs"
-  //             />
-  //             <ImageTooltip
-  //               img={
-  //                 <Image
-  //                   mr={1}
-  //                   src="/tech-logos/spring-logo.png"
-  //                   objectFit="fill"
-  //                   height="24px"
-  //                 />
-  //               }
-  //               tooltipText="Spring"
-  //             />
-  //             <ImageTooltip
-  //               img={
-  //                 <Image
-  //                   mr={1}
-  //                   src="/tech-logos/cairo-logo.png"
-  //                   objectFit="fill"
-  //                   height="24px"
-  //                 />
-  //               }
-  //               tooltipText="Cairo"
-  //             />
-  //           </HStack>
-  //         }
-  //       />
-  //     </Flex>
-  //   );
-  // };
   if (!project) return null;
+
   return (
-    <Flex direction="column" align="flex-start">
-      <Text fontSize="3xl" mb={8} fontWeight="bold">
-        Infos
+    <MotionFlex
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+      direction="column"
+      align="flex-start"
+      w="full"
+    >
+      <Text
+        fontSize={{ base: "2xl", md: "3xl" }}
+        mb={8}
+        fontWeight="bold"
+        bgGradient="linear(to-r, white, whiteAlpha.800)"
+        bgClip="text"
+      >
+        Project Information
       </Text>
+
       <Flex
         direction={{ base: "column", md: "row" }}
         w="full"
-        justify={{ base: "flex-start", lg: "flex-start" }}
+        gap={8}
+        flexWrap="wrap"
       >
-        <Flex
-          direction="column"
-          borderRight="1px solid"
-          borderColor={{ base: "transparent", md: "whiteAlpha.300" }}
-          pr={12}
-          mr={12}
+        {/* Social Links Section */}
+        <MotionBox
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.3 }}
+          flex={1}
+          minW={{ base: "100%", md: "250px" }}
         >
-          <ProjectsInfosDetails
-            title="Socials"
-            value={<NetworkLogos network={project.network} />}
-          />
-          {project.token && (
+          <Box
+            bg="primary.800"
+            borderRadius="xl"
+            p={6}
+            border="1px solid"
+            borderColor="primary.700"
+            h="full"
+            _hover={{
+              borderColor: "primary.600",
+            }}
+            transition="all 0.3s"
+          >
+            <Text
+              fontSize="sm"
+              fontWeight="600"
+              mb={4}
+              color="whiteAlpha.700"
+              letterSpacing="0.05em"
+              textTransform="uppercase"
+            >
+              Social Links
+            </Text>
             <ProjectsInfosDetails
-              title="Token"
+              title=""
+              value={<NetworkLogos network={project.network} />}
+            />
+            {project.token && (
+              <Box mt={6}>
+                <ProjectsInfosDetails
+                  title="Token"
+                  value={
+                    <HStack>
+                      <Text color="whiteAlpha.600" fontSize="sm">
+                        {project.token}
+                      </Text>
+                    </HStack>
+                  }
+                />
+              </Box>
+            )}
+          </Box>
+        </MotionBox>
+
+        {/* Jobs & Other Info Section */}
+        <MotionBox
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.4 }}
+          flex={1}
+          minW={{ base: "100%", md: "250px" }}
+        >
+          <Box
+            bg="primary.800"
+            borderRadius="xl"
+            p={6}
+            border="1px solid"
+            borderColor="primary.700"
+            h="full"
+            _hover={{
+              borderColor: "primary.600",
+            }}
+            transition="all 0.3s"
+          >
+            <Text
+              fontSize="sm"
+              fontWeight="600"
+              mb={4}
+              color="whiteAlpha.700"
+              letterSpacing="0.05em"
+              textTransform="uppercase"
+            >
+              Opportunities
+            </Text>
+            <ProjectsInfosDetails
+              title={t.common.jobs || "Jobs"}
               value={
                 <HStack>
-                  <Text color="whiteAlpha.600">{project.token}</Text>
-                  {/* <Link */}
-                  {/*  href="/" */}
-                  {/*  color="primary.200" */}
-                  {/*  hoverOpacity=".5" */}
-                  {/*  fontWeight="bold" */}
-                  {/* > */}
-                  {/*  0x1234...5678 */}
-                  {/* </Link> */}
+                  <Text color="whiteAlpha.600" fontSize="sm">
+                    {jobCount === 0
+                      ? "No open position"
+                      : `${jobCount} open position${jobCount > 1 ? "s" : ""}`}
+                  </Text>
+                  {jobCount > 0 && (
+                    <Link
+                      href="/jobs"
+                      color="accent.400"
+                      fontWeight="600"
+                      fontSize="sm"
+                      _hover={{
+                        color: "accent.300",
+                      }}
+                    >
+                      View →
+                    </Link>
+                  )}
                 </HStack>
               }
             />
-          )}
-          {/* <ProjectsInfosDetails */}
-          {/*  title="Founded" */}
-          {/*  value={<Text color="whiteAlpha.600">2021</Text>} */}
-          {/* /> */}
-        </Flex>
-        <Flex
-          direction="column"
-          borderRight="1px solid"
-          borderColor={{
-            base: "transparent",
-            md: "whiteAlpha.300",
-            xl: "transparent",
-          }}
-          mr={12}
-        >
-          {/* <ProjectsInfosDetails */}
-          {/*  title="Contracts" */}
-          {/*  value={ */}
-          {/*    <VStack align="flex-start" spacing={0}> */}
-          {/*      <Link */}
-          {/*        href="/" */}
-          {/*        color="primary.200" */}
-          {/*        hoverOpacity=".5" */}
-          {/*        fontWeight="bold" */}
-          {/*      > */}
-          {/*        0x1234...5678 */}
-          {/*      </Link> */}
-          {/*      <Link */}
-          {/*        href="/" */}
-          {/*        color="primary.200" */}
-          {/*        hoverOpacity=".5" */}
-          {/*        fontWeight="bold" */}
-          {/*      > */}
-          {/*        0x1234...5678 */}
-          {/*      </Link> */}
-          {/*    </VStack> */}
-          {/*  } */}
-          {/* /> */}
-          {/* <ProjectsInfosDetails */}
-          {/*  title="Audited" */}
-          {/*  value={<Text color="whiteAlpha.600">No</Text>} */}
-          {/* /> */}
-          <ProjectsInfosDetails
-            title={t.common.jobs || "Jobs"}
-            value={
-              <HStack>
-                <Text color="whiteAlpha.600">
-                  {jobCount === 0
-                    ? "No open position"
-                    : `${jobCount} open positions`}
-                </Text>
-                <Link
-                  href="/jobs"
-                  color="primary.200"
-                  hoverOpacity=".5"
-                  fontWeight="bold"
-                >
-                  see
-                </Link>
-              </HStack>
-            }
-          />
-          {/* <Hide below="xl">{renderTechStack()}</Hide> */}
-        </Flex>
-        {/* <Hide above="xl">{renderTechStack()}</Hide> */}
+          </Box>
+        </MotionBox>
       </Flex>
-    </Flex>
+    </MotionFlex>
   );
 };
 

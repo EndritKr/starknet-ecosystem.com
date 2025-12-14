@@ -1,10 +1,10 @@
-import { HStack, Link } from "@chakra-ui/layout";
+import { Flex, Link } from "@chakra-ui/layout";
 import {
-  faTwitter,
   faTelegram,
   faDiscord,
   faMedium,
   faGithub,
+  faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -21,13 +21,16 @@ const NetworkLogos: FC<Props> = ({
   network: { website, telegram, twitter, medium, github, discord },
   justifyContent = "flex-start",
 }) => {
-  const hoverColor = "whiteAlpha.900";
+  const hoverColor = "accent.400";
   return (
-    <HStack
+    <Flex
       justifyContent={justifyContent}
-      spacing={4}
+      align="center"
+      wrap="wrap"
+      columnGap={3}
+      rowGap={2}
       fontSize="18px"
-      color="whiteAlpha.600"
+      color="whiteAlpha.700"
       onClick={(e) => e.stopPropagation()}
     >
       {website && (
@@ -49,7 +52,7 @@ const NetworkLogos: FC<Props> = ({
             color: hoverColor,
           }}
         >
-          <FontAwesomeIcon icon={faTwitter} />
+          <FontAwesomeIcon icon={faXTwitter} />
         </Link>
       )}
       {telegram && (
@@ -96,7 +99,7 @@ const NetworkLogos: FC<Props> = ({
           <FontAwesomeIcon icon={faGithub} />
         </Link>
       )}
-    </HStack>
+    </Flex>
   );
 };
 export default NetworkLogos;

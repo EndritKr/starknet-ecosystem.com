@@ -7,6 +7,10 @@ const nextConfig = {
     // default language
     defaultLocale: 'en',
   },
+  // 👇 Force Turbopack à considérer CE dossier comme racine
+  turbopack: {
+    root: __dirname,
+  },
 }
 
 module.exports = nextConfig

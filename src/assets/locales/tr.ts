@@ -30,6 +30,9 @@ const trTranslate: TranslateState = {
     academy_subtitle:
       "Starknet öğrenme merkeziniz. Öğreticileri, rehberleri, katkıları, kütüphaneleri bulun. Bu çok hızlı hareket eden ekosistemi takip etmek için bültenlere abone olun.",
     jobs_subtitle: "Hayalinizdeki işe bir tık uzaktasınız olabilirsiniz.",
+    hero_metrics_title: "Canlı metrikler",
+    hero_metrics_description:
+      "Starknet ekosistemini güvence altına alan en güncel işlem, sözleşme ve blokları takip edin.",
     cumulative_chart: "Kümülatif grafik",
     non_cumulative_chart: "Kümülatif olmayan grafik",
   },

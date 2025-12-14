@@ -1,7 +1,8 @@
-import { Flex, Text } from "@chakra-ui/layout";
+import { Box, Flex, Text } from "@chakra-ui/layout";
 import type { FC, ChangeEvent } from "react";
 import { useState } from "react";
 import { useInView } from "react-cool-inview";
+import { motion } from "framer-motion";
 
 import { academyResourcesBundle } from "../../../data/academy";
 import { AcademyCategory, allAcademyTags } from "../../../data/tag";
@@ -11,9 +12,12 @@ import NewsInfosContent from "../../components/academy/NewsInfosContent";
 import ToolsContent from "../../components/academy/ToolsContent";
 import WalletsContent from "../../components/academy/WalletsContent";
 import HighlightedText from "../../components/layout/HighlightedText";
-import Input from "../../components/layout/Input";
-import Menu from "../../components/layout/Menu";
+import CategoryFilter from "../../components/layout/CategoryFilter";
+import SearchBar from "../../components/layout/SearchBar";
 import { useTranslate } from "../../context/TranslateProvider";
+
+const MotionBox = motion(Box);
+const MotionFlex = motion(Flex);
 
 const AcademyPage: FC = () => {
   const { t } = useTranslate();
@@ -23,9 +27,7 @@ const AcademyPage: FC = () => {
   const [lastIndexLoaded, setLastIndexLoaded] = useState<number>(LOADED_STEPS);
 
   const { observe } = useInView({
-    // When the last item comes to the viewport
     onEnter: ({ unobserve }) => {
-      // Pause observe when loading data
       unobserve();
       setLastIndexLoaded(lastIndexLoaded + LOADED_STEPS);
     },
@@ -86,43 +88,113 @@ const AcademyPage: FC = () => {
       w="full"
       direction="column"
       justify="flex-start"
-      align="flex-start"
+      align="center"
       transform="translateZ(0)"
+      position="relative"
+      py={12}
+      px={{ base: 4, md: 6 }}
+      bgGradient="linear(to-b, rgba(6, 4, 3, 0.95), rgba(28, 12, 6, 0.92))"
     >
-      <HighlightedText highlighted={t.common.academy || "Academy"} />
-      {/* Sub intro text */}
-      <Text
-        zIndex={1}
-        mt={8}
-        textAlign="start"
-        color="whiteAlpha.600"
-        fontSize="20px"
-        maxWidth="600px"
+      {/* Hero Section - Centered */}
+      <Flex
+        w="full"
+        direction="column"
+        align="center"
+        justify="center"
+        mb={16}
+        px={4}
       >
-        {t.common.academy_subtitle ||
-          "Your Starknet learning shop. Find tutorials, guides, contributions, libraries. Subscribe to newsletters to keep track of this very fast-moving ecosystem."}
-      </Text>
-      <Flex w="full" direction={{ base: "column", md: "row" }} mt={24}>
-        <Menu
-          typeText="Resources"
-          tags={allAcademyTags}
-          initialValue={allAcademyTags[0]}
-          onChange={(newValue) => {
-            setCurrentCategory(newValue);
-          }}
-        />
-        <Flex direction="column" w="full" align="flex-end">
-          <Input
-            debounce={200}
-            my={2}
-            mb={8}
-            maxW={{ base: "inherit", md: "250px" }}
-            onChange={handleChangeKeyword}
-            placeholder="Search"
-          />
-          {renderContent()}
-        </Flex>
+        {/* Title - Centered (kept as is) */}
+        <MotionBox
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          w="full"
+          maxW="1000px"
+          textAlign="center"
+          mb={6}
+        >
+          <Text
+            fontSize={{ base: "4xl", md: "5xl", lg: "6xl" }}
+            fontWeight="extrabold"
+            lineHeight="1.05"
+            letterSpacing="-0.01em"
+            bgGradient="linear(to-r, whiteAlpha.900, accent.400)"
+            bgClip="text"
+          >
+            {t.common.academy || "Academy"}
+          </Text>
+        </MotionBox>
+
+        {/* Subtitle - Centered */}
+        <MotionBox
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.15, duration: 0.6 }}
+          w="full"
+          maxW="800px"
+          textAlign="center"
+          mb={10}
+        >
+          <Text
+            fontSize={{ base: "lg", md: "xl" }}
+            color="whiteAlpha.700"
+            lineHeight="1.8"
+            maxW="720px"
+            mx="auto"
+          >
+            {t.common.academy_subtitle ||
+              "Your Starknet learning shop. Find tutorials, guides, contributions, libraries. Subscribe to newsletters to keep track of this very fast-moving ecosystem."}
+          </Text>
+        </MotionBox>
       </Flex>
+
+      {/* Category Filter - Horizontal and Modern */}
+      <Box w="full" maxW="1400px" px={4} mb={8}>
+        <MotionBox
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
+          w="full"
+        >
+          <CategoryFilter
+            tags={allAcademyTags}
+            selectedTag={currentCategory}
+            onSelect={(newTag) => {
+              setCurrentCategory(newTag);
+            }}
+          />
+        </MotionBox>
+      </Box>
+
+      {/* Search Bar */}
+      <Box w="full" maxW="1400px" px={4} mb={8}>
+        <Flex
+          w="full"
+          justify={{ base: "center", md: "flex-end" }}
+          align="center"
+        >
+          <Box w={{ base: "full", md: "320px" }}>
+            <SearchBar
+              value={keyword}
+              onChange={handleChangeKeyword}
+              placeholder="Search resources..."
+            />
+          </Box>
+        </Flex>
+      </Box>
+
+      {/* Content Section */}
+      <Box w="full" maxW="1400px" px={4}>
+        <MotionBox
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+          w="full"
+        >
+          {renderContent()}
+        </MotionBox>
+      </Box>
     </Flex>
   );
 };

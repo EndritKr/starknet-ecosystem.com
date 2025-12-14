@@ -6,6 +6,7 @@ import { useEffect } from "react";
 
 import CookiesToast from "../toasts/cookies-toast";
 
+import StarBackground from "./StarBackground";
 import Footer from "./Footer";
 import Header from "./Header";
 
@@ -42,41 +43,46 @@ function Layout({ children }: LayoutProps) {
     });
   }, [toast]);
   return (
-    <Flex
-      zIndex={1}
-      position="relative"
-      maxW="2100px"
-      width={{ base: "100%", lg: "80%" }}
-      px={{ sm: 4, lg: 0 }}
-      direction="column"
-      margin="0 auto"
-      h="100%"
-      w="full"
-      transition="0.5s ease-out"
-    >
-      <Box
-        width="full"
-        left={0}
-        right={0}
-        paddingLeft={0}
-        px={[4, 0]}
-        transition="background-color .2s ease-in"
-        zIndex={2000}
-      >
-        <Header />
-      </Box>
+    <>
+      <StarBackground />
+
       <Flex
-        flex="1 1 auto"
-        as="main"
-        align="flex-start"
-        justify="center"
-        mt={24}
-        px={[4, 0]}
+        zIndex={1}
+        position="relative"
+        maxW="2100px"
+        width={{ base: "100%", lg: "80%" }}
+        px={{ sm: 4, lg: 0 }}
+        direction="column"
+        margin="0 auto"
+        h="100%"
+        w="full"
+        transition="0.5s ease-out"
       >
-        {children}
+        <Box
+          width="full"
+          left={0}
+          right={0}
+          paddingLeft={0}
+          px={[4, 0]}
+          transition="background-color .2s ease-in"
+          zIndex={2000}
+        >
+          <Header />
+        </Box>
+        <Flex
+          flex="1 1 auto"
+          as="main"
+          align="flex-start"
+          justify="center"
+          mt={20}
+          px={[4, 0]}
+          pb={12}
+        >
+          {children}
+        </Flex>
+        <Footer />
       </Flex>
-      <Footer />
-    </Flex>
+    </>
   );
 }
 

@@ -29,6 +29,9 @@ const enTranslate: TranslateState = {
     academy_subtitle:
       "Your Starknet learning shop. Find tutorials, guides, contributions, libraries. Subscribe to newsletters to keep track on this very fast-moving ecosystem.",
     jobs_subtitle: "You may be one click away from your dream job.",
+    hero_metrics_title: "Live metrics",
+    hero_metrics_description:
+      "Keep up with the latest transactions, contracts, and blocks securing the Starknet ecosystem.",
     cumulative_chart: "Cumulative chart",
     non_cumulative_chart: "Non cumulative chart",
   },

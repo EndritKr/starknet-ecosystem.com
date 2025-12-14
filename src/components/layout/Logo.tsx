@@ -27,7 +27,7 @@ function Logo({ justify = "flex-start", icon }: LogoProps) {
           )}
         </Flex>
         <Text ml={3} fontSize="lg" fontWeight="bold">
-          StarkNet Ecosystem
+          Starknet Ecosystem
         </Text>
       </Flex>
     </Link>
