@@ -530,7 +530,7 @@ export const allProjects: Array<Project> = [
     name: "Realms",
     shortName: "Realms",
     description: "Strategy gaming on steroids. Players & AI agents juggle war, trade & politics - chasing loot, $lords and lasting glory.",
-    tags: [],
+    tags: ["gamefi"],
     image: "Realms.png",
     network: {
       website: "https://realms.world/",
@@ -4006,7 +4006,7 @@ export const allProjects: Array<Project> = [
     name: "Stark Arcade",
     shortName: "Stark Arcade",
     description: "Starknet Arcade Hub is a tribute to our NFT community and one of the largest mini-games hub for the Starknet Degens,",
-    tags: ["GameFi"],
+    tags: ["gamefi"],
     image: "Stark Arcade.jpg",
     network: {
       website: "https://www.starkarcade.com/",
@@ -4253,7 +4253,7 @@ export const allProjects: Array<Project> = [
     name: "Stwo/Cairo",
     shortName: "Stwo/Cairo",
     description: "Prove Cairo programs with the blazing-fast S-Two prover, powered by the cryptographic breakthrough of Circle STARKs.",
-    tags: [],
+    tags: ["tools"],
     image: "StwoCairo.png",
     network: {
       website: "",
@@ -4291,7 +4291,7 @@ export const allProjects: Array<Project> = [
     name: "Train Protocol",
     shortName: "Train Protocol",
     description: "The TRAIN Protocol is a P2P system based on Atomic Swaps, enabling crypto asset bridging across blockchains, without third parties & open to any network.",
-    tags: [],
+    tags: ["bridge"],
     image: "TRAIN",
     network: {
       website: "https://www.train.tech/",
