@@ -1800,7 +1800,7 @@ export const allProjects: Array<Project> = [
   },
   {
     id: "f02bca5f-5e46-4833-b1ea-8fb127e18651",
-    name: "a Money",
+    name: "Pulsar Money",
     shortName: "Pulsar Money",
     description: "Building a Smart Payments Hub with Social Pay, Smart Transfers, Airdrops, and way more.",
     tags: ["payments"],
