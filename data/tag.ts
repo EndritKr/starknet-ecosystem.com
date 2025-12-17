@@ -233,4 +233,9 @@ export const allEcosystemTags: Tag[] = [
     label: "Security",
     icon: "shield-halved",
   },
+  {
+    value: "privacy",
+    label: "Privacy",
+    icon: "user-secret",
+  },
 ];
