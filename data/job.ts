@@ -89,19 +89,6 @@ const allJobs: Array<Job> = [
     createdOn: new Date("2022-01-25"),
   },
   {
-    key: "3",
-    title: "Blockchain/Full Stack Devs",
-    projectId: "5299693a-a684-4332-a3cc-8b8fca48b4ce",
-    tags: [],
-    location: "Toronto, Canada",
-    remote: true,
-    description:
-      "PlayOasis is an NFT marketplace powered by Starknet, where our clients offer and list nfts with near zero gas fees. We are looking for a software engineer to work on frontend, backend and smart contracts.",
-    requirements: "Coding knowledge and experience are required",
-    createdOn: new Date("2022-03-20"),
-    applyLink: "mailto:jobs@playoasis.xyz",
-  },
-  {
     key: "4",
     title: "Senior Software Engineer",
     projectId: "efde17bc-1077-4d74-a2d3-77d8cdc7ac8a",
@@ -418,32 +405,6 @@ const allJobs: Array<Job> = [
     applyLink: "https://apply.workable.com/sithswap/j/C20203825C/",
   },
   {
-    key: "20",
-    title: "Senior Full Stack Engineer",
-    projectId: "30c7c562-75de-404d-bc95-570118d00653",
-    tags: ["React", "Typescript", "Python", "Docker", "Cairo"],
-    location: "New York City or Remote",
-    remote: true,
-    description:
-      "Empiric Network is the zk-native oracle, bringing the principles of DeFi to data infrastructure: decentralization, transparency and composability.\n" +
-      "Empiric is the leading oracle on Starknet, powered by high-quality data from the biggest market makers and exchanges, such as Alameda, CMT, Flow Traders, FTX, Gemini and Jane Street.\n" +
-      "Our offer:\n" +
-      "- Be at the cutting edge of web3 and help build critical infrastructure for the future of Ethereum\n" +
-      "- Learn together with a world-class team, and our friends at Starkware and within the Starknet ecosystem\n" +
-      "- A fast-paced, no bullshit work environment that has high expectations and helps you achieve them\n" +
-      "- Work on a project that is growing extremely quickly and has clear product-market fit in an existing market — while also pursuing moonshot opportunities to re-define trustless data fetching\n" +
-      "- Above-market compensation and meaningful equity",
-    requirements:
-      "We don't think in terms of hard requirements. Rather, here is what you'd be helping us do - if you think you're up for it, we'd love to hear from you!\n" +
-      "- Build out our technology infrastructure, from our core smart contracts (Cairo) to our SDKs (Python, Docker)\n" +
-      "- Help define the overall architecture of our solution and set up development processes that enable us to continue to iterate rapidly\n" +
-      "- Think from first principles to tackle challenges at the cutting edge of cryptography, smart contracts and data - prioritizing safety and robustness\n" +
-      "- Hire the brightest and most ambitious technical talent to come work with you",
-    createdOn: new Date("2022-07-16"),
-    applyLink:
-      "mailto:hello@42labs.xyz?body=Hi%20Empiric%20Team%2C%0A%0AI%27d%20like%20to%20join%20your%20team%21",
-  },
-  {
     key: "22",
     title: "Graphic Designer / Visual Artist",
     projectId: "bcb424ed-5f3d-4bb8-8474-fb7bb11ed484",
@@ -541,50 +502,6 @@ const allJobs: Array<Job> = [
     applyLink: "mailto:nicolas@empiric.network",
   },
   {
-    key: "26",
-    title: "FullStack Starknet Dev",
-    projectId: "3c1f84eb-46e0-45d7-b52b-02c57b0e3eb9",
-    tags: ["digital_id", "nft", "tools", "typescript", "react", "cairo"],
-    location: "Remote",
-    remote: true,
-    aboutUs:
-      'Starknet ID is an identity provider on Starknet. The protocol allows you to create your Starknet Identity (that can be seen as your on-chain ID card) and to attach things to it. You can already register ".stark" human-readable domains on your starknet identity that will be used as your Starknet username.',
-    description:
-      "- Do you want to contribute to the best ZK rollup ecosystem (Starknet) ?\n" +
-      "- Do you want to be an early employee of one of the most significant protocols of Starknet ?\n" +
-      "- Do you want to be able to work remotely when you want and where you want ?\n\n" +
-      "Today, you can do it all in Starknet ID",
-    responsibilities:
-      "- Front-end development using TypeScript, React, and blockchain tools such as starknet.js and starknet-react\n" +
-      "- Starknet smart contract development using Cairo, other blockchain tools, and software\n" +
-      "- Complete code reviews of other team member's code and assist in the mentoring more junior developers\n" +
-      "- Define, design, and develop small products that add value to the starknet ID ecosystem \n" +
-      "- Maintenance of the starknetid.js npm package",
-    aboutYou:
-      "- You take responsibility. When you take on a task, you get it done. When you get it done, it’s not good, it’s great.\n" +
-      "- You're knowledgeable about NFTs and their ecosystem (could be on Solana, Ethereum, or any chain). You love to talk about DeFi, your overpriced Jpegs, validity rollups, and blockchain tech in general. You understand the technology well enough to answer questions off-hand and are familiar with the more significant projects …\n" +
-      "- You're highly independent. You're self-motivated and can work well independently, but you know when to ask for help or collaborate to achieve a common goal.\n" +
-      "- You're a quick learner. You're always eager to learn new skills and technologies to improve your work, and you can quickly adapt to changing project requirements.\n\n" +
-      "Does it speak to you ? So stay with me, we'll get along fine",
-    requirements:
-      "- Expertise in front-end development with an understanding of React best practices, optimizations, and profiling\n" +
-      "- Experienced with TypeScript\n" +
-      "- Some experience with smart contract development (1-year minimum)\n" +
-      "- Verbal fluency in English\n" +
-      "- Interest and enthusiasm for Ethereum, deFi, NFTs, and Layer 2 space.\n" +
-      "- Experience in an agile work environment as well as remote/asynchronous work\n",
-    offer:
-      "- Great daily autonomy\n" +
-      "- Quickly take on responsibilities within the company, if you are good\n" +
-      "- Work from anywhere in the world and make your own schedules\n",
-    compensation: {
-      from: 75,
-      to: 300,
-    },
-    createdOn: new Date("2023-03-21"),
-    applyLink: "https://https://twitter.com/Fricoben",
-  },
-  {
     key: "27",
     title: "Blockchain Development Intern - Raum Network",
     projectId: "101f06d5-595f-4254-ac9e-4bb6c7975b00",
@@ -658,42 +575,6 @@ const allJobs: Array<Job> = [
       "- Contribute to the growth and transformation of the blockchain ecosystem.",
     createdOn: new Date("2023-08-21"),
     applyLink: "https://tally.so/r/3xMZ4k",
-  },
-  {
-    key: "29",
-    title: "Frontend Developer - Raum Network",
-    projectId: "101f06d5-595f-4254-ac9e-4bb6c7975b00",
-    tags: ["Frontend", "React", "Vue", "Typescript", "Javascript"],
-    location: "Remote",
-    remote: true,
-    description:
-      "Join the Raum Network team to craft stunning and responsive user interfaces that redefine the digital experience. Raum Network is dedicated to pushing the boundaries of web development, creating innovative solutions that captivate users and drive engagement.\n" +
-      "\n" +
-      "Raum Network is at the forefront of web technology, employing cutting-edge practices and tools to build next-generation storage solutions and DeFi applications.",
-    responsibilities:
-      "What you’ll be doing\n\n" +
-      "- Collaborate closely with design and backend teams to implement visually appealing and user-friendly interfaces.\n" +
-      "- Develop and maintain responsive web applications that deliver exceptional user experiences.\n" +
-      "- Participate in the design and implementation of new features, contributing your expertise to the creative process.\n" +
-      "- Optimize application performance and ensure compatibility across various devices and browsers.\n" +
-      "- Stay up-to-date with the latest frontend trends, tools, and best practices.",
-    requirements:
-      "- 2+ years of professional frontend development experience.\n" +
-      "- Proficiency in HTML, CSS, and JavaScript.\n" +
-      "- Experience with frontend frameworks like React, Vue.js, or Angular.\n" +
-      "- Strong understanding of responsive design principles.\n" +
-      "- Familiarity with version control systems (e.g., Git).\n" +
-      "- Problem-solving skills and attention to detail.\n" +
-      "- Excellent communication and teamwork abilities.",
-    offer:
-      "- Flexible work arrangement: Choose between working on-site at our Dunedin office or remotely.\n" +
-      "- Token allocation's and benefits package.\n" +
-      "- Opportunities for professional growth and skill development.\n" +
-      "- Access to cutting-edge technologies and tools.\n" +
-      "- Collaborative and inclusive work environment.\n" +
-      "- Work on projects that shape the future of web development.",
-    createdOn: new Date("2023-08-21"),
-    applyLink: "https://tally.so/r/mRMLvQ",
   },
 ];
 

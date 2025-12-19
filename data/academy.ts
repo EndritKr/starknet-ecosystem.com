@@ -205,16 +205,6 @@ export const learning: Resource[] = [
     },
   },
   {
-    name: "workshop-arf-dapp",
-    shortName: "workshop-arf-dapp",
-    description: "Workshop for starknetCC (nextjs x starknetjs x cairo)",
-    tags: ["learn"],
-    network: {
-      github:
-        "https://github.com/419Labs/workshop-arf-dapp) - Workshop for starknetCC (nextjs x starknetjs x cairo",
-    },
-  },
-  {
     name: "starkware-demo",
     shortName: "starkware-demo",
     description: "Automated Market Maker demo running on Starknet.",
@@ -241,16 +231,6 @@ export const learning: Resource[] = [
     tags: ["learn"],
     network: {
       github: "https://github.com/amanusk/basic-starknet-js-wallet",
-    },
-  },
-  {
-    name: "starknet-cc-tdd",
-    shortName: "starknet-cc-tdd",
-    description: "TDD (Test Driven Development) with your Cairo contracts",
-    tags: ["learn"],
-    network: {
-      github:
-        "https://github.com/419Labs/starknet-cc-tdd) - TDD (Test Driven Development",
     },
   },
   {
@@ -372,25 +352,6 @@ export const learning: Resource[] = [
     tags: ["learn"],
     network: {
       github: "https://github.com/stars/pcaversaccio/lists/cairo-starknet",
-    },
-  },
-  {
-    name: "starknet france",
-    shortName: "starknet France",
-    description: "A french translated blog explaining StarkWare technologies",
-    tags: ["learn"],
-    network: {
-      website: "https://starknet-france.com/",
-    },
-  },
-  {
-    name: "starknet learn",
-    shortName: "starknet learn",
-    description:
-      "A specialized educational platform dedicated to empower students with zk-STARK technology, the Cairo programming language, and the StarkNet contract architecture",
-    tags: ["learn"],
-    network: {
-      website: "https://starklearn.com/",
     },
   },
 ];
